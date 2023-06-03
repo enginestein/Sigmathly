@@ -1,0 +1,3 @@
+C:/Main/Projects/C#/Sigmathly/Sigmathly/out/build/x64-debug/CMakeFiles/Sigmathly.dir
+C:/Main/Projects/C#/Sigmathly/Sigmathly/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/Main/Projects/C#/Sigmathly/Sigmathly/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
