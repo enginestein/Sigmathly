@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\ap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\calculus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\equations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\complex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\nums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\sets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\civil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\electrical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\kinematics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\mechanical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\equify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\logarithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\polynomial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\statistics\algorithms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\statistics\stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\trigonometry\const.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\trigonometry\hyperbolic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\Sigmathly.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\ap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\calculus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\equations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\calculus\matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\computing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\nums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\computing\sets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\civil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\electrical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\kinematics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\engineering\mechanical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\equify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\logarithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\polynomial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\imp\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\statistics\algorithms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\statistics\stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\trigonometry\const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\trigonometry\hyperbolic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1F1799E7-C909-32D0-9991-D57A7C89DECD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B6B68402-53E8-3488-A681-F5EAAB9F6557}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

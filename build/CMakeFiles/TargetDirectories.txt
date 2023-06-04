@@ -1,0 +1,4 @@
+C:/Main/Projects/C++/Sigmathly/Sigmathly/build/CMakeFiles/Sigmathly.dir
+C:/Main/Projects/C++/Sigmathly/Sigmathly/build/CMakeFiles/PACKAGE.dir
+C:/Main/Projects/C++/Sigmathly/Sigmathly/build/CMakeFiles/ALL_BUILD.dir
+C:/Main/Projects/C++/Sigmathly/Sigmathly/build/CMakeFiles/ZERO_CHECK.dir

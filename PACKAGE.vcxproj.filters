@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Main\Projects\C++\Sigmathly\Sigmathly\build\CMakeFiles\078fb1153688f4a0cb8dfd08ee0bb7bb\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{39BF7008-6CB2-3501-9926-998908C48389}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
