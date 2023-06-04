@@ -46,6 +46,8 @@ sudo yum install sigmathly.rpm
 sudo dpkg -i sigmathly.deb
 ```
 
+and there are more releases to install from
+
 # Compile files to .so, .a, .dll yourself
 
 Run build.py using
