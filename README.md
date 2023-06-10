@@ -75,4 +75,4 @@ fPIC compiled files are used to generate .dll and .so
 Sigmathly is an advanced assembly framework which can be used to perform mathematics in assembly programming. With this framework, there is no need to use C++ or C to perform mathematics in assembly code. You can directly perform maths in assembly. As assembly is used in advanced and complex systems, now mathematics can be used in those systems too without using confusing assembly keywords. 
 
 ## To know how to use Sigmathly in assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE.md)
-## To know how to use Sigmathly in C++, click [here](https://aryapraneil.github.io/Sigmath/)
+## To know how to use Sigmathly in C++, click [here](https://enginestein.github.io/Sigmath/)
