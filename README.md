@@ -1,4 +1,4 @@
-# Sigmathly Beta
+# Sigmathly
 
 **The first ever advanced mathematical framework for assembly**
 
