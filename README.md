@@ -2,6 +2,16 @@
 
 **The first ever advanced mathematical framework for assembly**
 
+# Why use Sigmathly?
+
+Introducing Sigmathly: Revolutionizing Mathematics in Assembly Programming!
+
+Sigmathly is an innovative assembly framework designed to enable seamless mathematical operations directly within assembly code. With the power of Sigmathly, there is no longer a requirement to rely on external languages like C++ or C to perform mathematical calculations in assembly programming. Now, you can perform complex mathematics directly in assembly!
+
+Assembly language is widely utilized in advanced and intricate systems. However, incorporating mathematical operations into such systems has traditionally involved navigating through perplexing assembly keywords. Sigmathly eliminates this complexity by providing a straightforward and intuitive approach to integrating mathematics into assembly programming.
+
+By leveraging Sigmathly, programmers working with assembly can effortlessly leverage a wide range of mathematical functionalities, empowering them to tackle sophisticated mathematical computations within their projects. This groundbreaking framework opens up new possibilities for mathematics in assembly, making it an indispensable tool for developers working in complex systems.
+
 # Installation
 
 • Go to releases tab
@@ -70,9 +80,5 @@ gcc -c -fPIC file_name.cpp -o name.o
 
 fPIC compiled files are used to generate .dll and .so
 
-# Why use Sigmathly?
-
-Sigmathly is an advanced assembly framework which can be used to perform mathematics in assembly programming. With this framework, there is no need to use C++ or C to perform mathematics in assembly code. You can directly perform maths in assembly. As assembly is used in advanced and complex systems, now mathematics can be used in those systems too without using confusing assembly keywords. 
-
-## To know how to use Sigmathly in assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE.md)
-## To know how to use Sigmathly in C++, click [here](https://enginestein.github.io/Sigmath/)
+### To know how to use Sigmathly in assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE.md)
+### To know how to use Sigmathly in C++, click [here](https://enginestein.github.io/Sigmath/)
