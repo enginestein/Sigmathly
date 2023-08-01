@@ -1,8 +1,7 @@
-# Example usage of Sigmathly functions in ARM assembly
+@ EXAMPLE USAGE OF SIGMATHLY FUNCTIONS IN ARM ASSEMBLY
 
-<h2>Arithmetic Progression Class (AP.o)</h2>
+@ Arithmetic Progression Class (AP.o)
 
-``` asm
 .data
     @ Define the function arguments
     firstTerm:   .double 1.0
@@ -95,9 +94,9 @@ LastTerm:
     bx lr
 ```
 
-<h2>Calculus Class (CALCULUS.o)</h2>
+@ Calculus Class (CALCULUS.o)
 
-``` asm
+
 .data
     @ Define the function arguments
     f:          .double 0.0
@@ -242,9 +241,9 @@ DefiniteIntegral:
     bx lr
 ```
 
-<h2>Calculus Class Equations Section (EQUATIONS.o)</h2>
+@ Calculus Class Equations Section (EQUATIONS.o)
 
-``` asm
+
 .data
     @ Function pointers
     func_ptr:       .quad 0
@@ -432,9 +431,9 @@ _start:
     resb 8                       @ Reserve space for the result
 ```
 
-<h2>Matrix Class (MATRIX.o)</h2>
+@ Matrix Class (MATRIX.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Matrix_Add  @ Add(const Matrix& a, const Matrix& b)
@@ -475,9 +474,9 @@ format: .asciz "%d"            @ Format string for printf
 
 ```
 
-<h2>Basic Class (BASIC.o)</h2>
+@ Basic Class (BASIC.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Basic_Add   @ double Add(const std::initializer_list<double>& numbers)
@@ -516,9 +515,9 @@ numbers: .double 1.0, 2.0, 3.0, 4.0, 5.0, 6.0   @ Example initializer list
 
 ```
 
-<h2>Complex Class (complex.o)</h2>
+@ Complex Class (complex.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Compl_Abs       @ double Abs(const Complex& a)
@@ -561,9 +560,9 @@ format: .asciz "%lf\n"             @ Format string for printf
     @ ...
 ```
 
-<h2>Computing Class (COMPUTING.o)</h2>
+@ Computing Class (COMPUTING.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Computing_Floor     @ int Floor(double x)
@@ -621,9 +620,9 @@ format: .asciz "%d\n"                   @ Format string for printf
     @ ...
 ```
 
-<h2>Nums Class (NUMSG.o)</h2>
+@ Nums Class (NUMSG.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Nums_Gcd   @ int Gcd(int a, int b)
@@ -685,9 +684,9 @@ format: .asciz "%d\n"          @ Format string for printf
 
 ```
 
-<h2>Sets Class (sets.o)</h2>
+@ Sets Class (sets.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Sets_Union               @ std::vector<T> Union(const std::vector<T>& set1, const std::vector<T>& set2)
@@ -771,9 +770,9 @@ format: .asciz "Result size: %d\n"  @ Format string for printf
 
 ```
 
-<h2>Civil Class (CIVIL.o)</h2>
+@ Civil Class (CIVIL.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Civil_CalculateBeamDeflection  @ double CalculateBeamDeflection(double length, double load, double elasticity, double momentOfInertia)
@@ -870,9 +869,9 @@ format: .asciz "Result: %f\n"  @ Format string for printf
 
 ```
 
-<h2>Electrical Class (ELECTRICAL.o)</h2>
+@ Electrical Class (ELECTRICAL.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Electrical_CalculateResistance                
@@ -933,9 +932,9 @@ format: .asciz "Result: %f\n"  @ Format string for printf
 
 ```
 
-<h2>Kinematics Class (KINEMATICS.o)</h2>
+@ Kinematics Class (KINEMATICS.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Kinematics_CalculateDisplacement         
@@ -992,9 +991,9 @@ format: .asciz "Result: %f\n"  @ Format string for printf
     time: .double 0.0                   @ Reserve space for time (64-bit)
 ```
 
-<h2>Mechanical Class (MECHANICAL.o)</h2>
+@ Mechanical Class (MECHANICAL.o)
 
-``` asm
+
 .data
     @ Declare the function prototypes
     .extern Sigmath_Mechanical_CalculateTorque        
@@ -1044,9 +1043,9 @@ format: .asciz "Result: %f\n"  @ Format string for printf
     radius: .double 0.0        @ Reserve space for radius (64-bit)
 ```
 
-<h2>Equify Class (EQUIFY.o)</h2>
+@ Equify Class (EQUIFY.o)
 
-``` asm
+
 .data
     expression: .asciz "3 + 4 * 2 - ( 1 + 2 ) ^ 2"
 
@@ -1085,9 +1084,9 @@ main:
     svc #0          @ Perform the system call
 ```
 
-<h2>Geometry Class (GEOMETRY.o)</h2>
+@ Geometry Class (GEOMETRY.o)
 
-``` asm
+
 .data
     radius: .float 2.5
     width: .float 4.0
@@ -1226,9 +1225,9 @@ main:
     pop {fp, pc}
 ```
 
-<h2>Logarithm Class (LOGARITHM.o)</h2>
+@ Logarithm Class (LOGARITHM.o)
 
-``` asm
+
 .data
     x: .float 2.0
     n: .float 3.0
@@ -1292,9 +1291,9 @@ error_occurred:
     swi 0
 ```
 
-<h2>Polynomial Class (POLYNOMIAL.o)</h2>
+@ Polynomial Class (POLYNOMIAL.o)
 
-``` asm
+
 .data
 coefficients:   .double 2.0, -3.0, 1.0   ; Example coefficients for the polynomial
 x:              .float 1.5               ; Example value of x
@@ -1361,9 +1360,9 @@ main:
     pop {fp, pc}
 ```
 
-<h2>Random Class (RANDOM.o)</h2>
+@ Random Class (RANDOM.o)
 
-``` asm
+
 .data
 minDouble:      .double 0.0      ; Minimum value for RandUniform
 maxDouble:      .double 1.0      ; Maximum value for RandUniform
@@ -1422,9 +1421,9 @@ main:
     pop {fp, pc}
 ```
 
-<h2>Time Class (TIME.o)</h2>
+@ Time Class (TIME.o)
 
-``` asm
+
 .data
 timeStr:    .space 20      @ Placeholder for the time string
 timeLen:    .equ 20        @ Length of the time string
@@ -1466,9 +1465,9 @@ main:
     pop {fp, pc}
 ```
 
-<h2>Statgorithm Class (ALGORITHMS.o)</h2>
+@ Statgorithm Class (ALGORITHMS.o)
 
-``` asm
+
 .data
     values:     .double 1.5, 2.3, 0.8, 1.2, 3.1   @ Example array of values
     valuesLen:  .equ    ($ - values) / 8   @ Length of the array
@@ -1541,9 +1540,9 @@ main:
     pop     {fp, pc}
 ```
 
-<h2>Statistics Class (STATS.o)</h2>
+@ Statistics Class (STATS.o)
 
-``` asm
+
 .data
     values:     .double 1.5, 2.3, 0.8, 1.2, 3.1   @ Example array of values
     valuesLen:  .equ    ($ - values) / 8   @ Length of the array
@@ -1628,9 +1627,9 @@ main:
 
 ```
 
-<h2>Trig Class (CONST.o)</h2>
+@ Trig Class (CONST.o)
 
-``` asm
+
 .data
     x:     .double 1.5   @ Example value of x
 
@@ -1712,9 +1711,9 @@ main:
     pop     {fp, pc}      @ Restore the frame pointer and return
 ```
 
-<h2>Hyperbolic Class</h2> 
+@ Hyperbolic Class 
 
-``` asm
+
 .data
     x:     .double 1.5   @ Example value of x
 
