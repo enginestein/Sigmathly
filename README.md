@@ -1,6 +1,6 @@
 # Sigmathly
 
-**The first ever advanced mathematical framework for assembly**
+**The first ever advanced mathematical framework for x86-64 assembly**
 
 # Why use Sigmathly?
 
