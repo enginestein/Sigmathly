@@ -80,6 +80,6 @@ gcc -c -fPIC file_name.cpp -o name.o
 
 fPIC compiled files are used to generate .dll and .so
 
-### To know how to use Sigmathly in x86_64 assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-x86_64.md)
-### To know how to use Sigmathly in ARM assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-ARM.md)
+### To know how to use Sigmathly in x86_64 assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-x86_64.asm)
+### To know how to use Sigmathly in ARM assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-ARM.asm)
 ### To know how to use Sigmathly in C++, click [here](https://enginestein.github.io/Sigmath/)
