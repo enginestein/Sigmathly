@@ -1,4 +1,4 @@
-# Example of using  Sigmathly functions in assembly
+# Example usage of Sigmathly functions in x86_64 assembly
 
 <h2>Arithmetic Progression Class (AP.o)</h2>
 
