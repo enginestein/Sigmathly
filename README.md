@@ -2,6 +2,19 @@
 
 **The first ever advanced mathematical framework for all types of assembly languages**
 
+You can use Sigmathly in following assemblies:
+
+- ARM 
+- MIPS
+- PowerPC 
+- SPARC 
+- RISC-V 
+- Z80 
+- 6502 
+- AVR 
+- PIC 
+- 68k
+
 # Why use Sigmathly?
 
 Introducing Sigmathly: Revolutionizing Mathematics in Assembly Programming!
