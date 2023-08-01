@@ -1,4 +1,4 @@
-# Example of using  Sigmathly functions in ARM assembly
+# Example usage of Sigmathly functions in ARM assembly
 
 <h2>Arithmetic Progression Class (AP.o)</h2>
 
