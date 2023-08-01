@@ -1,6 +1,6 @@
 # Sigmathly
 
-**The first ever advanced mathematical framework for x86-64 assembly**
+**The first ever advanced mathematical framework for all types of assembly languages**
 
 # Why use Sigmathly?
 
@@ -80,5 +80,5 @@ gcc -c -fPIC file_name.cpp -o name.o
 
 fPIC compiled files are used to generate .dll and .so
 
-### To know how to use Sigmathly in x86_64 assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE.md)
+### To know how to use Sigmathly in x86_64 assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-x86_64.md)
 ### To know how to use Sigmathly in C++, click [here](https://enginestein.github.io/Sigmath/)
