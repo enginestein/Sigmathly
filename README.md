@@ -27,7 +27,7 @@ gcc main.c -o program -L/path/to/release -lsigmathly
 OR
 
 ```bash 
-gcc main.c -o program.exe -L/path/to/library -lmylibrary 
+gcc main.c -o program.exe -L/path/to/sigmathly -lsimgathly 
 ```
 
 # Use in C++
