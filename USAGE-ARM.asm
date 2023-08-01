@@ -92,7 +92,7 @@ FirstTerm:
 LastTerm:
     @ Replace the code for the 'LastTerm' function here
     bx lr
-```
+
 
 @ Calculus Class (CALCULUS.o)
 
@@ -239,7 +239,7 @@ RiemannSum:
 DefiniteIntegral:
     @ Replace the code for the 'DefiniteIntegral' function here
     bx lr
-```
+
 
 @ Calculus Class Equations Section (EQUATIONS.o)
 
@@ -429,7 +429,7 @@ _start:
 
 .bss
     resb 8                       @ Reserve space for the result
-```
+
 
 @ Matrix Class (MATRIX.o)
 
@@ -472,7 +472,7 @@ format: .asciz "%d"            @ Format string for printf
     @ Define variables or reserve space as needed
     @ ...
 
-```
+
 
 @ Basic Class (BASIC.o)
 
@@ -513,7 +513,7 @@ numbers: .double 1.0, 2.0, 3.0, 4.0, 5.0, 6.0   @ Example initializer list
     @ Define variables or reserve space as needed
     @ ...
 
-```
+
 
 @ Complex Class (complex.o)
 
@@ -558,7 +558,7 @@ format: .asciz "%lf\n"             @ Format string for printf
 .bss
     @ Define variables or reserve space as needed
     @ ...
-```
+
 
 @ Computing Class (COMPUTING.o)
 
@@ -618,7 +618,7 @@ format: .asciz "%d\n"                   @ Format string for printf
 .bss
     @ Define variables or reserve space as needed
     @ ...
-```
+
 
 @ Nums Class (NUMSG.o)
 
@@ -682,7 +682,7 @@ format: .asciz "%d\n"          @ Format string for printf
     @ Define variables or reserve space as needed
     @ ...
 
-```
+
 
 @ Sets Class (sets.o)
 
@@ -768,7 +768,7 @@ format: .asciz "Result size: %d\n"  @ Format string for printf
     set1_length: .word 4        @ Length of the first vector
     set2_length: .word 4        @ Length of the second vector
 
-```
+
 
 @ Civil Class (CIVIL.o)
 
@@ -867,7 +867,7 @@ format: .asciz "Result: %f\n"  @ Format string for printf
     finalLength: .double 0.0   @ Reserve space for finalLength (64-bit)
     initialDiameter: .double 0.0 @ Reserve space for initialDiameter (64-bit)
 
-```
+
 
 @ Electrical Class (ELECTRICAL.o)
 
@@ -930,7 +930,7 @@ format: .asciz "Result: %f\n"  @ Format string for printf
     voltage: .double 0.0       @ Reserve space for voltage (64-bit)
     current: .double 0.0       @ Reserve space for current (64-bit)
 
-```
+
 
 @ Kinematics Class (KINEMATICS.o)
 
@@ -989,7 +989,7 @@ format: .asciz "Result: %f\n"  @ Format string for printf
     finalVelocity: .double 0.0          @ Reserve space for finalVelocity (64-bit)
     acceleration: .double 0.0           @ Reserve space for acceleration (64-bit)
     time: .double 0.0                   @ Reserve space for time (64-bit)
-```
+
 
 @ Mechanical Class (MECHANICAL.o)
 
@@ -1041,7 +1041,7 @@ format: .asciz "Result: %f\n"  @ Format string for printf
 .bss
     force: .double 0.0         @ Reserve space for force (64-bit)
     radius: .double 0.0        @ Reserve space for radius (64-bit)
-```
+
 
 @ Equify Class (EQUIFY.o)
 
@@ -1082,7 +1082,7 @@ main:
     mov r7, #1      @ Use the sys_exit system call
     mov r0, #0      @ Return 0 status
     svc #0          @ Perform the system call
-```
+
 
 @ Geometry Class (GEOMETRY.o)
 
@@ -1223,7 +1223,7 @@ main:
 
     @ Clean up the stack frame
     pop {fp, pc}
-```
+
 
 @ Logarithm Class (LOGARITHM.o)
 
@@ -1289,7 +1289,7 @@ error_occurred:
     mov r0, #1
     mov r7, #1
     swi 0
-```
+
 
 @ Polynomial Class (POLYNOMIAL.o)
 
@@ -1358,7 +1358,7 @@ main:
 
     @ Clean up the stack frame
     pop {fp, pc}
-```
+
 
 @ Random Class (RANDOM.o)
 
@@ -1419,7 +1419,7 @@ main:
 
     @ Clean up the stack frame
     pop {fp, pc}
-```
+
 
 @ Time Class (TIME.o)
 
@@ -1463,7 +1463,7 @@ main:
 
     @ Clean up the stack frame
     pop {fp, pc}
-```
+
 
 @ Statgorithm Class (ALGORITHMS.o)
 
@@ -1538,7 +1538,7 @@ main:
 
     @ Clean up the stack frame
     pop     {fp, pc}
-```
+
 
 @ Statistics Class (STATS.o)
 
@@ -1625,7 +1625,7 @@ main:
     @ Clean up the stack frame
     pop     {fp, pc}      @ Restore the frame pointer and return
 
-```
+
 
 @ Trig Class (CONST.o)
 
@@ -1709,7 +1709,7 @@ main:
 
     @ Clean up the stack frame
     pop     {fp, pc}      @ Restore the frame pointer and return
-```
+
 
 @ Hyperbolic Class 
 
@@ -1856,4 +1856,4 @@ main:
 
     @ Clean up the stack frame
     pop {fp, pc}      @ Restore the frame pointer and return
-```
+
