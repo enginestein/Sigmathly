@@ -1,6 +1,6 @@
-@ EXAMPLE USAGE OF SIGMATHLY FUNCTIONS IN ARM ASSEMBLY
+# EXAMPLE USAGE OF SIGMATHLY FUNCTIONS IN ARM ASSEMBLY
 
-@ Arithmetic Progression Class (AP.o)
+# Arithmetic Progression Class (AP.o)
 
 .data
     @ Define the function arguments
