@@ -1,8 +1,8 @@
-# Example usage of Sigmathly functions in x86_64 assembly
+; EXAMPLE USAGE OF SIGMATHLY FUNCTIONS IN x86_64 ASSEMBLY
 
-<h2>Arithmetic Progression Class (AP.o)</h2>
+; Arithmetic Progression Class (AP.o)
 
-``` asm
+
 section .data
     ; Define the function arguments
     firstTerm dq 1.0
@@ -68,11 +68,11 @@ _start:
     xor ebx, ebx
     int 0x80
 
-```
 
-<h2>Calculus Class (CALCULUS.o)</h2>
 
-``` asm
+; Calculus Class (CALCULUS.o)
+
+
 section .data
     ; Define the function arguments
     f dq 0.0
@@ -176,11 +176,11 @@ _start:
     xor ebx, ebx
     int 0x80
 
-```
 
-<h2>Calculus Class Equations Section (EQUATIONS.o)</h2>
 
-``` asm
+; Calculus Class Equations Section (EQUATIONS.o)
+
+
 section .data
     ; Function pointers
     func_ptr dq 0
@@ -329,11 +329,11 @@ _start:
 section .bss
     resb 8 ; Reserve space for the result
 
-```
 
-<h2>Matrix Class (MATRIX.o)</h2>
 
-``` asm
+; Matrix Class (MATRIX.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Matrix_Add  ; Add(const Matrix& a, const Matrix& b)
@@ -371,11 +371,11 @@ section .bss
     ; Define variables or reserve space as needed
     ; ...
 
-```
 
-<h2>Basic Class (BASIC.o)</h2>
 
-``` asm
+; Basic Class (BASIC.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Basic_Add   ; double Add(const std::initializer_list<double>& numbers)
@@ -413,11 +413,11 @@ section .bss
     ; Define variables or reserve space as needed
     ; ...
 
-```
 
-<h2>Complex Class (complex.o)</h2>
 
-``` asm
+; Complex Class (complex.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Compl_Abs       ; double Abs(const Complex& a)
@@ -458,11 +458,11 @@ _start:
 section .data
     format db "%lf", 10, 0      ; Format string for printf
 
-```
 
-<h2>Computing Class (COMPUTING.o)</h2>
 
-``` asm
+; Computing Class (COMPUTING.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Computing_Floor     ; int Floor(double x)
@@ -533,11 +533,11 @@ _start:
 section .data
     format db "%d", 10, 0       ; Format string for printf
 
-```
 
-<h2>Nums Class (NUMSG.o)</h2>
 
-``` asm
+; Nums Class (NUMSG.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Nums_Gcd   ; int Gcd(int a, int b)
@@ -611,11 +611,11 @@ _start:
 section .data
     format db "%d", 10, 0       ; Format string for printf
 
-```
 
-<h2>Sets Class (sets.o)</h2>
 
-``` asm
+; Sets Class (sets.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Sets_Union               ; std::vector<T> Union(const std::vector<T>& set1, const std::vector<T>& set2)
@@ -701,11 +701,11 @@ section .data
     set1_length dd 4            ; Length of the first vector
     set2_length dd 4            ; Length of the second vector
 
-```
 
-<h2>Civil Class (CIVIL.o)</h2>
 
-``` asm
+; Civil Class (CIVIL.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Civil_CalculateBeamDeflection  ; double CalculateBeamDeflection(double length, double load, double elasticity, double momentOfInertia)
@@ -785,11 +785,11 @@ section .bss
     finalLength       resq 1      ; Reserve space for finalLength (64-bit)
     initialDiameter   resq 1      ; Reserve space for initialDiameter (64-bit)
 
-```
 
-<h2>Electrical Class (ELECTRICAL.o)</h2>
 
-``` asm
+; Electrical Class (ELECTRICAL.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Electrical_CalculateResistance                ; double CalculateResistance(double voltage, double current)
@@ -845,11 +845,11 @@ section .bss
     voltage  resq 1              ; Reserve space for voltage (64-bit)
     current  resq 1              ; Reserve space for current (64-bit)
 
-```
 
-<h2>Kinematics Class (KINEMATICS.o)</h2>
 
-``` asm
+; Kinematics Class (KINEMATICS.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Kinematics_CalculateDisplacement         ; double CalculateDisplacement(double initialVelocity, double finalVelocity, double acceleration, double time)
@@ -898,11 +898,11 @@ section .bss
     acceleration     resq 1        ; Reserve space for acceleration (64-bit)
     time             resq 1        ; Reserve space for time (64-bit)
 
-```
 
-<h2>Mechanical Class (MECHANICAL.o)</h2>
 
-``` asm
+; Mechanical Class (MECHANICAL.o)
+
+
 section .data
     ; Declare the function prototypes
     extern Sigmath_Mechanical_CalculateTorque        ; double CalculateTorque(double force, double radius)
@@ -948,11 +948,11 @@ section .bss
     force   resq 1               ; Reserve space for force (64-bit)
     radius  resq 1               ; Reserve space for radius (64-bit)
 
-```
 
-<h2>Equify Class (EQUIFY.o)</h2>
 
-``` asm
+; Equify Class (EQUIFY.o)
+
+
 section .data
     expression db "3 + 4 * 2 - ( 1 + 2 ) ^ 2", 0
 
@@ -988,11 +988,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Geometry Class (GEOMETRY.o)</h2>
 
-``` asm
+; Geometry Class (GEOMETRY.o)
+
+
 section .data
     radius dd 2.5
     width dd 4.0
@@ -1120,11 +1120,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Logarithm Class (LOGARITHM.o)</h2>
 
-``` asm
+; Logarithm Class (LOGARITHM.o)
+
+
 section .data
     x dd 2.0
     n dd 3.0
@@ -1170,11 +1170,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Polynomial Class (POLYNOMIAL.o)</h2>
 
-``` asm
+; Polynomial Class (POLYNOMIAL.o)
+
+
 section .data
     coefficients dq 2.0, -3.0, 1.0    ; Example coefficients for the polynomial
     x dd 1.5                         ; Example value of x
@@ -1241,11 +1241,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Random Class (RANDOM.o)</h2>
 
-``` asm
+; Random Class (RANDOM.o)
+
+
 section .data
     minDouble dq 0.0      ; Minimum value for RandUniform
     maxDouble dq 1.0      ; Maximum value for RandUniform
@@ -1299,11 +1299,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Time Class (TIME.o)</h2>
 
-``` asm
+; Time Class (TIME.o)
+
+
 section .data
     timeStr db 20   ; Placeholder for the time string
     timeLen equ $-timeStr   ; Length of the time string
@@ -1347,11 +1347,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Statgorithm Class (ALGORITHMS.o)</h2>
 
-``` asm
+; Statgorithm Class (ALGORITHMS.o)
+
+
 section .data
     values: dq 1.5, 2.3, 0.8, 1.2, 3.1   ; Example array of values
     valuesLen equ ($ - values) / 8   ; Length of the array
@@ -1426,11 +1426,11 @@ main:
     mov eax, 0
     ret
 
-```
 
-<h2>Statistics Class (STATS.o)</h2>
 
-``` asm
+; Statistics Class (STATS.o)
+
+
 section .data
     values: dq 1.5, 2.3, 0.8, 1.2, 3.1   ; Example array of values
     valuesLen equ ($ - values) / 8   ; Length of the array
@@ -1515,11 +1515,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Trig Class (CONST.o)</h2>
 
-``` asm
+; Trig Class (CONST.o)
+
+
 section .data
     x: dq 1.5   ; Example value of x
 
@@ -1595,11 +1595,11 @@ main:
     ; Exit the program
     mov eax, 0
     ret
-```
 
-<h2>Hyperbolic Class</h2> 
 
-``` asm
+; Hyperbolic Class 
+
+
 section .data
     x: dq 1.5   ; Example value of x
 
@@ -1730,4 +1730,4 @@ main:
 
     ; Return from the function
     ret
-```
+
