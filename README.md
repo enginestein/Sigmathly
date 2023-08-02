@@ -115,7 +115,7 @@ Basically a package and class is reffered like this in C++:
 Sigmath::ClassName::FunctionName()
 ```
 
-For Assembly we can replace `::` operator into `_` to use functions and classes. There is always a slight difference in `extern` when the Assembly type changes.
+For Assembly we can replace `::` operator with `_` to use functions and classes. There is always a slight difference in `extern` when the Assembly type changes.
 
 #### To know how to use Sigmathly in x86_64 assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-x86_64.asm)
 #### To know how to use Sigmathly in ARM assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-ARM.asm)
