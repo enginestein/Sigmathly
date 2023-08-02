@@ -27,11 +27,11 @@ By leveraging Sigmathly, programmers working with assembly can effortlessly leve
 
 # Installation
 
-• Go to releases tab
+- Go to releases tab
 
-• Download .dll release / .so release / .a release
+- Download .dll release / .so release / .a release
 
-• Link the release to assembly file 
+- Link the release to assembly file 
 
 ``` bash
 gcc main.c -o program -L/path/to/release -lsigmathly 
@@ -42,6 +42,8 @@ OR
 ```bash 
 gcc main.c -o program.exe -L/path/to/sigmathly -lsimgathly 
 ```
+
+- To link library files in other types of assemblies you can use a comaptible compiler and link them using the same process
 
 # Use in C++
 
