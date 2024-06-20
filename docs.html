@@ -1,0 +1,1483 @@
+<html lang="en"><head>
+    <meta charSets="UTF-8">
+    <title>Sigmath Framework Documentation</title>
+    <style>
+        /* Dark mode styles */
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #fff;
+        }
+        
+        a {
+            color: #6bc1ff;
+        }
+        
+        a:hover {
+            color: #fff;
+        }
+        
+        pre {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: scroll;
+        }
+        
+        /* Light mode styles */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #fff;
+                color: #333;
+            }
+            
+            a {
+                color: #0069d9;
+            }
+            
+            pre {
+                background-color: #f5f5f5;
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sigmath Framework Documentation</h1>
+        
+        <p>Welcome to the documentation for the Sigmath framework! This page contains information on how to use the framework and its various components. Use the links below to navigate to different sections of the documentation.</p>
+    
+        <h1>Installation</h1>
+        
+        <h2>There are few ways to install Sigmath:</h2>
+        <h3>Get releases from <a href="https://github.com/enginestein/Sigmath">Github</a></h3>
+        <h4>.DLL release:-</h4>
+        <p>For visual studio projects add .DLL reference in your project.</p>
+        <p>For python:
+            
+            <code>$ pip install pythonnet</code>
+            </p><pre><code>
+            import clr 
+            clr.AddReference('path/to/Sigmath.dll')
+
+            from Sigmath import Basic
+            print(Basic.Add(2, 2))
+            </code></pre>
+        
+        <p></p>
+
+        <h4>NuGet release:-</h4>
+        <code>$ nuget install Sigmath.1.0.0.nupkg -Source "path-to-folder-containing-nupkg"</code>
+
+
+        <pre><code>$ py -m pip install Sigmath</code></pre>
+        <pre><code>$ nuget install Sigmath</code></pre>
+
+        <h4>Wheel release:-</h4>
+        <code>$ pip install Sigmath-1.0.0-py3-none-any.whl</code> 
+        
+        <h4>TAR GZ release:-</h4>
+        <code>$ pip install Sigmath-1.0.0.tar.gz</code>
+
+        <h3>Other ways</h2>
+        <code>$ pip install Sigmath</code>
+        <br>
+        <code>$ nuget install Sigmath</code>
+        <br>
+        <code>$ choco install Sigmath</code>   
+        <br>
+        <code>$ brew install Sigmath</code>        
+        
+        <h1>Basic class</h2>
+        
+        <p>This is basic class of Sigmath containing basic mathematical functions.</p>
+        <h2>Sigmath.Basic.Add(arguements)</h2>
+            <p>This function can be used to add an infinite amount of numbers. All arguements must be double data type.</p>
+            <pre><code>
+                • C#  Console.WriteLine(Sigmath.Basic.Add(1, 2, 3, 4, 5, 6))
+                • Python  print(Sigmath.Basic.add(1.0, 2.0, 3.0, 4.0, 5.0, 6.0))
+            </code></pre>
+
+        <h2>Sigmath.Basic.Substract(arguements)</h2>
+            <p>This function can be used to substract an infinite amount of numbers. All arguements must be double data type</p>
+            <pre><code>
+                • C#  Console.WriteLine(Sigmath.Basic.Substract(1, 2, 3, 4, 5, 6))
+                • Python  print(Sigmath.Basic.substract(1.0, 2.0, 3.0, 4.0, 5.0, 6.0))
+            </code></pre>
+
+        <h2>Sigmath.Basic.Multiply(arguements)</h2>
+            <p>This function can be used to multiply an infinite amount of numbers. All arguements must be double data type</p>
+            <pre><code>
+                • C#  Console.WriteLine(Sigmath.Basic.Multiply(1, 2, 3, 4, 5, 6))
+                • Python  print(Sigmath.Basic.multiply(1.0, 2.0, 3.0, 4.0, 5.0, 6.0))
+            </code></pre>
+        
+        <h2>Sigmath.Basic.Divide(arguments)</h2>
+            <p>This function can be used to divide an infinite amount of numbers. All arguments must be double.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.Divide(10, 5, 2));
+                • Python print(Sigmath.Basic.divide(10.0, 5.0, 2.0))
+            </code></pre>
+        
+        <h2>Sigmath.Basic.Power(baseNum, exponent)</h2>
+            <p>This function can be used to calculate the value of a number raised to a specified power.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.Power(2, 3));
+                • Python print(Sigmath.Basic.power(2.0, 3.0))
+            </code></pre>
+            
+        <h2>Sigmath.Basic.Abs(value)</h2>
+            <p>This function can be used to calculate the absolute value of a number.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.Abs(-10));
+                • Python print(Sigmath.Basic.abs(-10.0))
+            </code></pre>
+        
+        <h2>Sigmath.Basic.SquareRoot(number)</h2>
+            <p>This function can be used to calculate the square root of a number.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.SquareRoot(16));
+                • Python print(Sigmath.Basic.sqrt(16.0))
+            </code></pre>
+            
+        <h2>Sigmath.Basic.Exp(x)</h2>
+            <p>This function can be used to calculate the value of the exponential function e raised to the power of x.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.Exp(2));
+                • Python print(Sigmath.Basic.exp(2.0))
+            </code></pre>
+            
+        <h2>Sigmath.Basic.CubeRoot(x)</h2>
+            <p>This function can be used to calculate the cube root of a number.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.CubeRoot(27));
+                • Python print(Sigmath.Basic.cbrt(27.0))
+            </code></pre>
+            
+        <h2>Sigmath.Basic.Evaluate(expression)</h2>
+            <p>This function can be used to evaluate a mathematical expression given as a string.</p>
+            <pre><code>
+                • C# Console.WriteLine(Sigmath.Basic.Evaluate("1 + 2 * 3"));
+                • Python print(Sigmath.Basic.evaluate("1 + 2 * 3"))
+            </code></pre>
+
+        <h1>Compl class</h1>
+        
+        <p>This class is used to perform mathematical operations related to complex numbers.</p>
+
+        <h2>Sigmath.Compl.Complex(real, imaginary)</h2>
+        <p>This function is used to create a complex number given the real and imaginary parts as doubles.</p>
+        <pre><code>
+            • C# Complex number = new Sigmath.Compl.Complex(2.0, 3.0);
+            • Python number = Sigmath.Compl.complex(2.0, 3.0)
+        </code></pre>
+        <h2>Sigmath.Compl.Complex + Complex</h2>
+        <p>This operator overloading method allows the addition of two complex numbers.</p>
+        <pre><code>
+            • C# Complex sum = new Sigmath.Compl.Complex(1.0, 2.0) + new Sigmath.Compl.Complex(3.0, 4.0);
+            • Python sum = Sigmath.Compl.complex(1.0, 2.0) + Sigmath.Compl.Complex(3.0, 4.0)
+        </code></pre>
+        <h2>Sigmath.Compl.Complex - Complex</h2>
+        <p>This operator overloading method allows the subtraction of two complex numbers.</p>
+        <pre><code>
+            • C# Complex difference = new Sigmath.Compl.Complex(1.0, 2.0) - new Sigmath.Compl.Complex(3.0, 4.0);
+            • Python difference = Sigmath.Compl.complex(1.0, 2.0) - Sigmath.Compl.Complex(3.0, 4.0)
+        </code></pre>
+        <h2>Sigmath.Compl.Complex * Complex</h2>
+        <p>This operator overloading method allows the multiplication of two complex numbers.</p>
+        <pre><code>
+            • C# Complex product = new Sigmath.Compl.Complex(1.0, 2.0) * new Sigmath.Compl.Complex(3.0, 4.0);
+            • Python product = Sigmath.Compl.complex(1.0, 2.0) * Sigmath.Compl.Complex(3.0, 4.0)
+        </code></pre>
+        <h2>Sigmath.Compl.Complex / Complex</h2>
+        <p>This operator overloading method allows the division of two complex numbers.</p>
+        <pre><code>
+            • C# Complex quotient = new Sigmath.Compl.Complex(1.0, 2.0) / new Sigmath.Compl.Complex(3.0, 4.0);
+            • Python quotient = Sigmath.Compl.complex(1.0, 2.0) / Sigmath.Compl.Complex(3.0, 4.0)
+        </code></pre>
+        <h2>Sigmath.Compl.Abs(Complex)</h2>
+        <p>This function returns the absolute value (magnitude) of a complex number.</p>
+        <pre><code>
+            • C# double magnitude = Sigmath.Compl.Abs(new Sigmath.Compl.Complex(3.0, 4.0));
+            • Python magnitude = Sigmath.Compl.compl_abs(Sigmath.Compl.complex(3.0, 4.0))
+        </code></pre>
+        <h2>Sigmath.Compl.Magnitude(number)</h2>
+        <p>This function returns the magnitude of a complex number.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Compl.Magnitude(number))
+            • Python print(Sigmath.Compl.magnitude(number))
+        </code></pre>
+
+        <h1>Computing class</h1>
+        <p>This class contains some computing methods.</p>
+
+        <h2>Sigmath.Floor(x)</h2>
+        <p>This function returns the largest integer less than or equal to the specified number.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Floor(3.14));
+            • Python print(Sigmath.floor(3.14))
+        </code></pre>
+        <h2>Sigmath.Ceil(x)</h2>
+        <p>This function returns the smallest integer greater than or equal to the specified number.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Ceil(3.14));
+            • Python print(Sigmath.ceil(3.14))
+        </code></pre>
+        <h2>Sigmath.Round(x)</h2>
+        <p>This function rounds a number to the nearest integer.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Round(3.14));
+            • Python print(Sigmath.round(3.14))
+        </code></pre>
+
+        <h1>Sets class</h1>
+        <p>This class contains operations on Sets. In python, the arguement must be a list.</p>
+
+        <h2>Sigmath.Sets.Union&lt;T&gt;(Sets1, Sets2)</h2>
+        <p>This function returns a new list that contains all elements from both input lists with duplicates removed.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Sets.Union(Sets1, Sets2))
+            • Python print(Sigmath.Sets.union(Sets1, Sets2))
+        </code></pre>
+        <h2>Sigmath.Sets.Intersection&lt;T&gt;(Sets1, Sets2)</h2>
+        <p>This function returns a new list that contains only the elements that are common to both input lists.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Sets.Intersection(Sets1, Sets2))
+            • Python print(Sigmath.Sets.intersection(Sets1, Sets2))
+        </code></pre>
+        <h2>Sigmath.Sets.Difference&lt;T&gt;(Sets1, Sets2)</h2>
+        <p>This function returns a new list that contains only the elements that are in the first input list but not in the second.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Sets.Difference(Sets1, Sets2))
+            • Python print(Sigmath.Sets.diff(Sets1, Sets2))
+        </code></pre>
+        <h2>Sigmath.Sets.SymmetricDifference&lt;T&gt;(Sets1, Sets2)</h2>
+        <p>This function returns a new list that contains only the elements that are in one of the input lists, but not in both.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Sets.SymmetricDifference(Sets1, Sets2))
+            • Python print(Sigmath.Sets.symdiff(Sets1, Sets2))
+        </code></pre>
+        <h2>Sigmath.Sets.IsSubSets&lt;T&gt;(subSets, Sets)</h2>
+        <p>This function returns true if all elements in the first input list are also present in the second input list.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Sets.IsSubSets(subSets, Sets))
+            • Python print(Sigmath.Sets.subset(subSets, Sets))
+        </code></pre>
+        <h2>Sigmath.Sets.IsSuperSets&lt;T&gt;(superSets, Sets)</h2>
+        <p>This function returns true if all elements in the second input list are also present in the first input list.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Sets.IsSuperSets(superSets, Sets))
+            • Python print(Sigmath.Sets.superset(superSets, Sets))
+        </code></pre>
+      
+        <h1>Arithmetic Progression class</h1>
+        <p>This class contains methods and formulas from AP.</p>
+        
+        <h2>Sigmath.ArithmeticProgression.Arithmetic(firstTerm, commonDifference, numTerms)</h2>
+        <p>This function returns an array of arithmetic progression terms, given the first term, common difference, and number of terms.</p>
+        <pre><code>
+            • C# Console.WriteLine(string.Join(", ", Sigmath.ArithmeticProgression.Arithmetic(firstTerm, commonDifference, numTerms)))
+            • Python print(*Sigmath.ArithmeticProgression.arithmetic(firstTerm, commonDifference, numTerms), sep=", ")
+        </code></pre>
+        <h2>Sigmath.ArithmeticProgression.ArithmeticSum(firstTerm, commonDifference, numTerms)</h2>
+        <p>This function returns the sum of an arithmetic progression, given the first term, common difference, and number of terms.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.ArithmeticSum(firstTerm, commonDifference, numTerms))
+            • Python print(Sigmath.ArithmeticProgression.ArithmeticSum(firstTerm, commonDifference, numTerms))
+        </code></pre>
+        <h2>Sigmath..ArithmeticProgressionNthTerm(n, a1, d)</h2>
+        <p>This function returns the nth term of an arithmetic progression, given the term number, first term, and common difference.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.NthTerm(n, a1, d))
+            • Python print(Sigmath.ArithmeticProgression.nthterm(n, a1, d))
+        </code></pre>
+        <h2>Sigmath.ArithmeticProgression.TermNumber(an, a1, d)</h2>
+        <p>This function returns the term number of an arithmetic progression, given the nth term, first term, and common difference.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.TermNumber(an, a1, d))
+            • Python print(Sigmath.ArithmeticProgression.termnum(an, a1, d))
+        </code></pre>
+        <h2>Sigmath.ArithmeticProgression.TermNumber(an, n, a1)</h2>
+        <p>This function returns the term number of an arithmetic progression, given the nth term, term number, and first term.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.TermNumber(an, n, a1))
+            • Python print(Sigmath.ArithmeticProgression.termnum(an, n, a1))
+        </code></pre>
+        <h2>Sigmath.ArithmeticProgression.CommonDifference(an, a1, n)</h2>
+        <p>This function returns the common difference of an arithmetic progression, given the nth term, first term, and term number.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.CommonDifference(an, a1, n))
+            • Python print(Sigmath.ArithmeticProgression.common_diff(an, a1, n))
+        </code></pre>
+        <h2>Sigmath.ArithmeticProgression.FirstTerm(an, n, d)</h2>
+        <p>This function returns the first term of an arithmetic progression, given the nth term, term number, and common difference.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.FirstTerm(an, n, d))
+            • Python print(Sigmath.ArithmeticProgression.first_term(an, n, d))
+        </code></pre>
+        <h2>Sigmath.ArithmeticProgression.LastTerm(a1, n, d)</h2>
+        <p>This function returns the last term of an arithmetic progression, given the first term, term number, and common difference.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.ArithmeticProgression.LastTerm(a1, n, d))
+            • Python print(Sigmath.ArithmeticProgression.Last_term(a1, n, d))
+        </code></pre>
+
+        <h1>Calculus class</h1>
+        <p>This class containts various calculus equation solving methods.</p>
+
+        <h2>Calculus.Derivative(Func&lt;double, double&gt; f, double x)</h2>
+        <p>This function computes the derivative of a given function at a specified point using a numerical method.</p>
+        <h3>Parameters</h3>
+        <ul>
+            <li><code>f</code> - a function to differentiate</li>
+            <li><code>x</code> - the point at which to find the derivative</li>
+        </ul>
+        <h3>Returns</h3>
+        <p>The numerical derivative of <code>f</code> at <code>x</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(Calculus.Derivative(f, x))
+            • C++ std::cout &lt;&lt; Calculus::Derivative(f, x) &lt;&lt; std::endl;
+            • Python print(Calculus.derivative(f, x))
+        </code></pre>
+        <h2>Calculus.Integral(Func&lt;double, double&gt; f, double a, double b, int n)</h2>
+        <p>This function computes the definite integral of a given function over a specified interval using the trapezoidal rule.</p>
+        <h3>Parameters</h3>
+        <ul>
+            <li><code>f</code> - a function to integrate</li>
+            <li><code>a</code> - the lower limit of integration</li>
+            <li><code>b</code> - the upper limit of integration</li>
+            <li><code>n</code> - the number of subintervals to use in the trapezoidal rule</li>
+        </ul>
+        <h3>Returns</h3>
+        <p>The numerical value of the definite integral of <code>f</code> over the interval <code>[a, b]</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(Calculus.Integral(f, a, b, n))
+            • C++ std::cout &lt;&lt; Calculus::Integral(f, a, b, n) &lt;&lt; std::endl;
+            • Python print(Calculus.integral(f, a, b, n))
+        </code></pre>
+        <h2>Calculus.Limit(Func&lt;double, double&gt; f, Func&lt;double, double&gt; g, double x)</h2>
+        <p>This function computes the limit of a given function as it approaches a specified point using L'Hopital's Rule.</p>
+        <h3>Parameters</h3>
+        <ul>
+            <li><code>f</code> - the numerator function</li>
+            <li><code>g</code> - the denominator function</li>
+            <li><code>x</code> - the point at which to find the limit</li>
+        </ul>
+        <h3>Returns</h3>
+        <p>The numerical value of the limit of <code>f / g</code> as <code>x</code> approaches the specified point.</p>
+        <pre><code>
+            • C# Console.WriteLine(Calculus.Limit(f, g, x))
+            • C++ std::cout &lt;&lt; Calculus::Limit(f, g, x) &lt;&lt; std::endl;
+            • Python print(Calculus.limit(f, g, x))
+        </code></pre>
+
+        <h2>Calculus.FindRoot(f, a, b, epsilon)</h2>
+        <p>This function uses the bisection method to find a root of the input function within a specified interval, with a specified tolerance level.</p>
+        <ul>
+          <li><code>f</code>: a function taking a single input argument and returning a double</li>
+          <li><code>a</code>: the left endpoint of the interval to search for a root in</li>
+          <li><code>b</code>: the right endpoint of the interval to search for a root in</li>
+          <li><code>epsilon</code> (optional): the tolerance level for the root, defaults to 1e-6</li>
+        </ul>
+        <pre><code>
+            • C# Console.WriteLine(Calculus.FindRoot(f, a, b, epsilon))
+            • C++ cout &lt;&lt; Calculus::FindRoot(f, a, b, epsilon) &lt;&lt; endl;
+            • Python print(calculus.find_root(f, a, b, epsilon))
+        </code></pre>
+        <h2>Calculus.PartialDerivative(f, index, h)</h2>
+        <p>This function returns a function representing the partial derivative of the input function with respect to the specified variable, using the central difference method with a specified step size.</p>
+        <ul>
+          <li><code>f</code>: a function taking an array of input arguments and returning a double</li>
+          <li><code>index</code>: the index of the input argument to differentiate with respect to</li>
+          <li><code>h</code> (optional): the step size to use for the finite difference method, defaults to 1e-6</li>
+        </ul>
+        <pre><code>
+            • C# Func&lt;double[], double&gt; dfdx = Calculus.PartialDerivative(f, index, h);
+              double result = dfdx(x);
+            • C++ auto dfdx = Calculus::PartialDerivative(f, index, h);
+              double result = dfdx(x);
+            • Python dfdx = calculus.partial_derivative(f, index, h)
+              result = dfdx(x)
+        </code></pre>
+        <h2>Calculus.Gradient(f, h)</h2>
+        <p>This function returns a function representing the gradient of the input function, using the central difference method with a specified step size.</p>
+        <ul>
+          <li><code>f</code>: a function taking an array of input arguments and returning a double</li>
+          <li><code>h</code> (optional): the step size to use for the finite difference method, defaults to 1e-6</li>
+        </ul>
+        <pre><code>
+            • C# Func&lt;double[], double[]&gt; gradf = Calculus.Gradient(f, h);
+              double[] result = gradf(x);
+            • C++ auto gradf = Calculus::Gradient(f, h);
+              vector&lt;double&gt; result = gradf(x);
+            • Python gradf = calculus.gradient(f, h)
+              result = gradf(x)
+        </code></pre>
+
+
+        <h2>Calculus.Hessian(f, h = 1e-6)</h2>
+        <p>This function returns the Hessian matrix of a multivariable function, given as a lambda expression. The Hessian matrix contains all second-order partial derivatives of the function.</p>
+        <p>Parameters:</p>
+        <ul>
+            <li><code>f</code>: The function of which to calculate the Hessian.</li>
+            <li><code>h</code> (optional): The step size used for numerical differentiation. Default value is 1e-6.</li>
+        </ul>
+        <p>Returns:</p>
+        <ul>
+            <li>A lambda expression that calculates the Hessian matrix at a given point.</li>
+        </ul>
+        <pre><code>
+            • C# var hessian = Calculus.Hessian(f);
+              double[,] hessianMatrix = hessian(x);
+            • Python hessian = Calculus.hessian(f)
+              hessianMatrix = hessian(x)
+        </code></pre>
+        <h2>Calculus.FindCriticalPoints(f, a, b, epsilon = 1e-6)</h2>
+        <p>This function finds all critical points of a single-variable function on a given interval, using the bisection method. A critical point is a point at which the derivative of the function is zero or undefined.</p>
+        <p>Parameters:</p>
+        <ul>
+            <li><code>f</code>: The function of which to find the critical points.</li>
+            <li><code>a</code>: The left endpoint of the interval.</li>
+            <li><code>b</code>: The right endpoint of the interval.</li>
+            <li><code>epsilon</code> (optional): The tolerance for the bisection method. Default value is 1e-6.</li>
+        </ul>
+        <p>Returns:</p>
+        <ul>
+            <li>An array containing all critical points of the function on the interval.</li>
+        </ul>
+        <pre><code>
+            • C# double[] criticalPoints = Calculus.FindCriticalPoints(f, a, b);
+              foreach (double x in criticalPoints) Console.WriteLine(x);
+            • Python criticalPoints = Calculus.find_critical_points(f, a, b)
+              for x in criticalPoints: print(x)
+        </code></pre>
+
+
+        <h2>Calculus.RiemannSum(f, a, b, n, type = RiemannSumType.Left)</h2>
+        <p>This function computes the Riemann sum of a function <code>f</code> over the interval [<code>a</code>, <code>b</code>] using <code>n</code> subintervals and the specified type of Riemann sum. The default type is left Riemann sum.</p>
+        <p>The available types of Riemann sum are:</p>
+        <ul>
+          <li><code>RiemannSumType.Left</code> - left Riemann sum</li>
+          <li><code>RiemannSumType.Right</code> - right Riemann sum</li>
+          <li><code>RiemannSumType.Midpoint</code> - midpoint Riemann sum</li>
+          <li><code>RiemannSumType.Trapezoidal</code> - trapezoidal Riemann sum</li>
+        </ul>
+        <pre><code>
+            • C# double result = Calculus.RiemannSum(f, a, b, n, type);
+            • C++ double result = Calculus::RiemannSum(f, a, b, n, type);
+            • Python result = Calculus.RiemannSum(f, a, b, n, type)
+        </code></pre>
+        <h2>Calculus.DefiniteIntegral(f, a, b, n = 1000)</h2>
+        <p>This function computes the definite integral of a function <code>f</code> over the interval [<code>a</code>, <code>b</code>] using the midpoint Riemann sum with <code>n</code> subintervals.</p>
+        <pre><code>
+            • C# double result = Calculus.DefiniteIntegral(f, a, b, n);
+            • C++ double result = Calculus::DefiniteIntegral(f, a, b, n);
+            • Python result = Calculus.DefiniteIntegral(f, a, b, n)
+        </code></pre>
+
+        <h1>Equations class</h1>
+        <p>This class containts various methods to solve different types of polynomial equations.</p>
+
+
+        <h2>Sigmath.Equations.ExponentialEquationSolver(equation, value)</h2>
+        <p>This function solves an exponential equation of the form y = a*e^(bx)+c for x, given the equation and the value of y.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Equations.ExponentialEquationSolver(equation, value))
+            • C++ std::cout << Sigmath::ExponentialEquationSolver(equation, value) << std::endl;
+            • Python print(Sigmath.Equations.exponential(equation, value))
+        </code></pre>
+        <h2>Sigmath.Equations.LogarithmicEquationSolver(equation, value)</h2>
+        <p>This function solves a logarithmic equation of the form y = a*log(bx)+c for x, given the equation and the value of y.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Equations.LogarithmicEquationSolver(equation, value))
+            • C++ std::cout << Sigmath::LogarithmicEquationSolver(equation, value) << std::endl;
+            • Python print(Sigmath.Equations.logarithmic(equation, value))
+        </code></pre>
+
+        <h2>Sigmath.Equations.SolveEquation(equifiedEquation)</h2>
+        <p>This function solves a mathematical equation in the form of a string and returns the result.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Equations.SolveEquation("2 * (3 + 4) - 5"))
+            • Python print(Sigmath.Equations.solve("2 * (3 + 4) - 5"))
+        </code></pre>
+        <h2>Sigmath.Equations.SolveLinearEquation(equation, x)</h2>
+        <p>This function solves a linear equation in the form of a string for a given value of x, and returns the result.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Equations.SolveLinearEquation("2x + 3 = 7", 2))
+            • C++ double result = Sigmath::SolveLinearEquation("2x + 3 = 7", 2);
+            • Python print(Sigmath.Equations.linear("2x + 3 = 7", 2))
+        </code></pre>
+        <h2>Sigmath.Equations.SolveQuadraticEquation(equation)</h2>
+        <p>This function solves a quadratic equation in the form of a string and returns a tuple containing the two real roots.</p>
+        <pre><code>
+            • C# var roots = Sigmath.Equations.SolveQuadraticEquation("x^2 + 2x + 1 = 0");
+              Console.WriteLine($"Root 1: {roots.Item1}, Root 2: {roots.Item2}");
+            • C++ auto roots = Sigmath::SolveQuadraticEquation("x^2 + 2x + 1 = 0");
+              cout << "Root 1: " << get<0>(roots) << ", Root 2: " << get<1>(roots) << endl;
+            • Python roots = Sigmath.Equations.quadratic("x^2 + 2x + 1 = 0")
+              print(f"Root 1: {roots[0]}, Root 2: {roots[1]}")
+        </code></pre>
+        <h2>Sigmath.Equations.SolveCubicEquation(equation)</h2>
+        <p>This function solves a cubic equation in the form of a string and returns a tuple containing the three real roots.</p>
+        <pre><code>
+            • C# var roots = Sigmath.Equations.SolveCubicEquation("x^3 + 2x^2 + 3x + 4 = 0");
+              Console.WriteLine($"Root 1: {roots.Item1}, Root 2: {roots.Item2}, Root 3: {roots.Item3}");
+            • C++ auto roots = Sigmath::SolveCubicEquation("x^3 + 2x^2 + 3x + 4 = 0");
+              cout << "Root 1: " << get<0>(roots) << ", Root 2: " << get<1>(roots) << ", Root 3: " << get<2>(roots) << endl;
+            • Python roots = Sigmath.Equations.cubic("x^3 + 2x^2 + 3x + 4 = 0")
+              print(f"Root 1: {roots[0]}, Root 2: {roots[1]}, Root 3: {roots[2]}")
+        </code></pre>
+
+
+        <h2>Sigmath.Equations.SolvePolynomialEquation(coefficients)</h2>
+        <p>This function solves a polynomial equation of degree up to 2 and returns the roots as an array. The input is an array of coefficients of the polynomial in decreasing order of degree.</p>
+        <pre><code>
+            • C#
+                double[] coefficients = { a, b, c };
+                double[] roots = Sigmath.Equations.SolvePolynomialEquation(coefficients);
+            • Python
+                coefficients = [a, b, c]
+                roots = Sigmath.Equations.polynomic(coefficients)
+        </code></pre>
+        <h2>Sigmath.Equations.BinomialTheorem(a, b, n)</h2>
+        <p>This function calculates the value of the binomial theorem given the values of a, b, and n.</p>
+        <pre><code>
+            • C#
+                double result = Sigmath.Equations.BinomialTheorem.Calculate(a, b, n);
+            • Python
+                result = Sigmath.Equations.binomial.calculate(a, b, n)
+        </code></pre>
+        <h2>Sigmath.Equations.PowerEquation(baseValue, exponent)</h2>
+        <p>This function calculates the value of a power equation given the base value and exponent.</p>
+        <pre><code>
+            • C#
+                double result = Sigmath.Equations.PowerEquation.Solve(baseValue, exponent);
+            • Python
+                result = Sigmath.Equations.power_equation.solve(baseValue, exponent)
+        </code></pre>
+        <h2>Sigmath.Differentiation(equation, x)</h2>
+        <p>This function calculates the value of the first derivative of a mathematical function at a given point using numerical differentiation.</p>
+        <pre><code>
+            • C#
+                double result = Sigmath.Equations.Differentiation.Differentiate(equation, x);
+            • Python
+                result = Sigmath.equations.differentiation.differentiate(equation, x)
+        </code></pre>
+        <h2>Sigmath.Equations.HyperbolicEquation(equation, tolerance)</h2>
+        <p>This function solves a hyperbolic equation using numerical methods and returns the solution.</p>
+        <pre><code>
+            • C#
+                double result = Sigmath.Equations.HyperbolicEquation.Solve(equation, tolerance);
+            • Python
+                result = Sigmath.Equations.hyperbolic.solve(equation, tolerance)
+        </code></pre>
+
+        <h1>Matrix class</h1>
+        <p>This class containts various methods reagarding matrix calculus</p>
+
+        <h2>Sigmath.Matrix(int rows, int cols)</h2>
+        <p>Creates a new instance of a matrix with the given number of rows and columns, where all elements are initially Sets to 0.</p>
+        <pre><code>
+            • C# Matrix matrix = new Matrix(rows, cols);
+            • C++ Matrix matrix(rows, cols); // not applicable in C++
+            • Python matrix = Matrix(rows, cols)
+        </code></pre>
+        <h2>Sigmath.Matrix(double[,] data)</h2>
+        <p>Creates a new instance of a matrix from a two-dimensional array of doubles.</p>
+        <pre><code>
+            • C# double[,] data = { { 1.0, 2.0 }, { 3.0, 4.0 } };
+                 Matrix matrix = new Matrix(data);
+            • C++ double data[2][2] = {{1.0, 2.0}, {3.0, 4.0}};
+                 Matrix matrix(data);
+            • Python data = [[1.0, 2.0], [3.0, 4.0]]
+                 matrix = Matrix(data)
+        </code></pre>
+        <h2>Sigmath.Matrix.this[int row, int col]</h2>
+        <p>Gets or Setss the value of the element at the specified row and column in the matrix.</p>
+        <pre><code>
+            • C# Matrix matrix = new Matrix(rows, cols);
+                 matrix[0, 0] = 1.0;
+                 double value = matrix[0, 0];
+            • C++ Matrix matrix(rows, cols);
+                 matrix(0, 0) = 1.0;
+                 double value = matrix(0, 0);
+            • Python matrix = Matrix(rows, cols)
+                 matrix[0][0] = 1.0
+                 value = matrix[0][0]
+        </code></pre>
+        <h2>Sigmath.Matrix.operator +(Matrix a, Matrix b)</h2>
+        <p>Computes the sum of two matrices.</p>
+        <pre><code>
+            • C# Matrix a = new Matrix(rows, cols);
+                 Matrix b = new Matrix(rows, cols);
+                 Matrix result = a + b;
+            • C++ Matrix a(rows, cols);
+                 Matrix b(rows, cols);
+                 Matrix result = a + b;
+            • Python a = Matrix(rows, cols)
+                 b = Matrix(rows, cols)
+                 result = a + b
+        </code></pre>
+        <h2>Sigmath.Matrix.operator -(Matrix a, Matrix b)</h2>
+        <p>Computes the difference of two matrices.</p>
+        <pre><code>
+            • C# Matrix a = new Matrix(rows, cols);
+                 Matrix b = new Matrix(rows, cols);
+                 Matrix result = a - b;
+            • C++ Matrix a(rows, cols);
+                 Matrix b(rows, cols);
+                 Matrix result = a - b;
+            • Python a = Matrix(rows, cols)
+                 b = Matrix(rows, cols)
+                 result = a - b
+        </code></pre>
+        <h2>Sigmath.Matrix.operator *(Matrix a, Matrix b)</h2>
+        <p>Computes the product of two matrices.</p>
+        <pre><code>
+            • C# Matrix a = new Matrix(rows1, cols1);
+                 Matrix b = new Matrix(rows2, cols2);
+                 Matrix result = a * b;
+            • C++ Matrix a(rows1, cols1);
+                 Matrix b(rows2, cols2);
+                 Matrix result = a * b;
+            • Python a = Matrix(rows1, cols1)
+                 b = Matrix(rows2, cols2)
+                 result = a * b
+        </code></pre>
+
+
+        <h2>Sigmath.Matrix.Inverse(Matrix matrix)</h2>
+        <p>This function computes the inverse of a square matrix using Gaussian elimination.</p>
+        <h3>Parameters</h3>
+        <ul>
+            <li><code>Matrix matrix</code>: the matrix to be inverted</li>
+        </ul>
+        <h3>Returns</h3>
+        <ul>
+            <li>A new <code>Matrix</code> object representing the inverse of the input matrix.</li>
+        </ul>
+        <h3>Example Usage</h3>
+        <pre><code>
+        // C#
+        Matrix A = new Matrix(new double[,] {{1, 2}, {3, 4}});
+        Matrix A_inv = Sigmath.Matrix.Inverse(A);
+        Console.WriteLine("Inverse of A:");
+        Console.WriteLine(A_inv);
+        // Python
+        A = Matrix([[1, 2], [3, 4]])
+        A_inv = Sigmath.Matrix.Inverse(A)
+        print("Inverse of A:")
+        print(A_inv)
+        </code></pre>
+        
+        <h2>Sigmath.Matrix.Identity(int n)</h2>
+        <p>This function returns an <code>n</code> by <code>n</code> identity matrix.</p>
+        <h3>Parameters</h3>
+        <ul>
+            <li><code>int n</code>: the size of the identity matrix to be returned</li>
+        </ul>
+        <h3>Returns</h3>
+        <ul>
+            <li>A new <code>Matrix</code> object representing the identity matrix of size <code>n</code>.</li>
+        </ul>
+        <h3>Example Usage</h3>
+        <pre><code>
+        // C#
+        Matrix I = Sigmath.Matrix.Identity(3);
+        Console.WriteLine("3x3 identity matrix:");
+        Console.WriteLine(I);
+        // Python
+        I = Sigmath.Matrix.Identity(3)
+        print("3x3 identity matrix:")
+        print(I)
+        </code></pre>
+        
+        <h2>Sigmath.Matrix.Concatenate(Matrix a, Matrix b)</h2>
+        <p>This function returns the horizontal concatenation of two matrices.</p>
+        <h3>Parameters</h3>
+        <ul>
+            <li><code>Matrix a</code>: the first matrix</li>
+            <li><code>Matrix b</code>: the second matrix</li>
+        </ul>
+        <h3>Returns</h3>
+        <ul>
+            <li>A new <code>Matrix</code> object representing the horizontal concatenation of <code>a</code> and <code>b</code>.</li>
+        </ul>
+        <h3>Example Usage</h3>
+        <pre><code>
+        // C#
+        Matrix A = new Matrix(new double[,] {{1, 2}, {3, 4}});
+        Matrix B = new Matrix(new double[,] {{5, 6}, {7, 8}});
+        Matrix C = Sigmath.Matrix.Concatenate(A, B);
+        Console.WriteLine("Horizontal concatenation of A and B:");
+        Console.WriteLine(C);
+        // Python
+        A = Matrix([[1, 2], [3, 4]])
+        B = Matrix([[5, 6], [7, 8]])
+        C = Sigmath.Matrix.Concatenate(A, B)
+        print("Horizontal concatenation of A and B:")
+        print(C)
+        </code></pre>
+        
+        <h1>Civil class</h1>
+        <p>This class containts some civil engineering mathematical functions.</p>
+
+        <h2>Sigmath.Civil.CalculateBeamDeflection(length, load, elasticity, momentOfInertia)</h2>
+        <p>This function calculates the deflection of a beam, given its length, load, elasticity, and moment of inertia.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Civil.CalculateBeamDeflection(length, load, elasticity, momentOfInertia))
+            • Python print(Sigmath.Civil.beam_deflection(length, load, elasticity, momentOfInertia))
+        </code></pre>
+        <h2>Sigmath.Civil.CalculateStress(force, area)</h2>
+        <p>This function calculates the stress on an object, given the force applied and the cross-sectional area.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Civil.CalculateStress(force, area))
+            • Python print(Sigmath.Civil.stress(force, area))
+        </code></pre>
+        <h2>Sigmath.Civil.CalculateStrain(initialLength, finalLength, initialDiameter)</h2>
+        <p>This function calculates the strain on an object, given the initial and final lengths and the initial diameter.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Civil.CalculateStrain(initialLength, finalLength, initialDiameter))
+            • Python print(Sigmath.Civil.strain(initialLength, finalLength, initialDiameter))
+        </code></pre>
+        <h2>Sigmath.Civil.CalculateYoungsModulus(stress, strain)</h2>
+        <p>This function calculates the Young's modulus of an object, given the stress and strain.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Civil.CalculateYoungsModulus(stress, strain))
+            • Python print(Sigmath.Civil.youngs_modulus(stress, strain))
+        </code></pre>
+
+        <h1>Electrical class</h1>
+        <p>This class containts some electrical engineering mathematical functions.</p>
+
+        <h2>Sigmath.Electrical.CalculateResistance(voltage, current)</h2>
+        <p>This function calculates the resistance in an electrical circuit given the voltage and current.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateResistance(voltage, current))
+            • C++ std::cout << Sigmath::Electrical::CalculateResistance(voltage, current) << std::endl;
+            • Python print(Sigmath.Electrical.resistance(voltage, current))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculatePower(voltage, current)</h2>
+        <p>This function calculates the power in an electrical circuit given the voltage and current.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculatePower(voltage, current))
+            • C++ std::cout << Sigmath::Electrical::CalculatePower(voltage, current) << std::endl;
+            • Python print(Sigmath.Electrical.calculate_power(voltage, current))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateCapacitance(charge, voltage)</h2>
+        <p>This function calculates the capacitance in an electrical circuit given the charge and voltage.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateCapacitance(charge, voltage))
+            • C++ std::cout << Sigmath::Electrical::CalculateCapacitance(charge, voltage) << std::endl;
+            • Python print(Sigmath.Electrical.capacitance(charge, voltage))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateInductance(voltage, current, frequency)</h2>
+        <p>This function calculates the inductance in an electrical circuit given the voltage, current, and frequency.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateInductance(voltage, current, frequency))
+            • C++ std::cout << Sigmath::Electrical::CalculateInductance(voltage, current, frequency) << std::endl;
+            • Python print(Sigmath.Electrical.inductance(voltage, current, frequency))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateImpedance(resistance, reactance)</h2>
+        <p>This function calculates the impedance in an electrical circuit given the resistance and reactance.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateImpedance(resistance, reactance))
+            • C++ std::cout << Sigmath::Electrical::CalculateImpedance(resistance, reactance) << std::endl;
+            • Python print(Sigmath.Electrical.impedance(resistance, reactance))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateReactance(inductance, frequency)</h2>
+        <p>This function calculates the reactance in an electrical circuit given the inductance and frequency.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateReactance(inductance, frequency))
+            • C++ std::cout << Sigmath::Electrical::CalculateReactance(inductance, frequency) << std::endl;
+            • Python print(Sigmath.Electrical.reactance(inductance, frequency))
+        </code></pre>
+
+        <h2>Sigmath.Electrical.CalculateResonantFrequency(inductance, capacitance)</h2>
+        <p>This function calculates the resonant frequency of an LC circuit, given the inductance and capacitance values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateResonantFrequency(inductance, capacitance))
+            • C++ std::cout << Sigmath::CalculateResonantFrequency(inductance, capacitance) << std::endl;
+            • Python print(Sigmath.Electrical.resonant_frequency(inductance, capacitance))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculatePowerFactor(realPower, apparentPower)</h2>
+        <p>This function calculates the power factor of an electrical system, given the real power and apparent power values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculatePowerFactor(realPower, apparentPower))
+            • C++ std::cout << Sigmath::CalculatePowerFactor(realPower, apparentPower) << std::endl;
+            • Python print(Sigmath.Electrical.power_factor(realPower, apparentPower))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateRMS(values)</h2>
+        <p>This function calculates the root-mean-square (RMS) value of a Sets of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateRMS(values))
+            • C++ std::cout << Sigmath::CalculateRMS(values) << std::endl;
+            • Python print(Sigmath.Electrical.rms(values))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateTotalResistanceInSeries(resistances)</h2>
+        <p>This function calculates the total resistance of a series circuit, given the individual resistance values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateTotalResistanceInSeries(resistances))
+            • C++ std::cout << Sigmath::CalculateTotalResistanceInSeries(resistances) << std::endl;
+            • Python print(Sigmath.Electrical.resistance_in_series(resistances))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateTotalResistanceInParallel(resistances)</h2>
+        <p>This function calculates the total resistance of a parallel circuit, given the individual resistance values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateTotalResistanceInParallel(resistances))
+            • C++ std::cout << Sigmath::CalculateTotalResistanceInParallel(resistances) << std::endl;
+            • Python print(Sigmath.Electrical.resistance_in_parallel(resistances))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateTotalCapacitanceInSeries(capacitances)</h2>
+        <p>This function calculates the total capacitance of a series circuit, given the individual capacitance values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateTotalCapacitanceInSeries(capacitances))
+            • C++ std::cout << Sigmath::CalculateTotalCapacitanceInSeries(capacitances) << std::endl;
+            • Python print(Sigmath.Electrical.capacitance_in_series(capacitances))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateTotalCapacitanceInParallel(capacitances)</h2>
+        <p>This function calculates the total capacitance of a parallel circuit, given the individual capacitance values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateTotalCapacitanceInParallel(capacitances))
+            • C++ std::cout << Sigmath::CalculateTotalCapacitanceInParallel(capacitances) << std::endl;
+        </pre></code>
+
+
+        <h2>Sigmath.Electrical.CalculateTotalInductanceInSeries(inductances)</h2>
+        <p>This function calculates the total inductance of inductors connected in series.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateTotalInductanceInSeries(inductances))
+            • C++ std::cout << Sigmath::CalculateTotalInductanceInSeries(inductances) << std::endl;
+            • Python print(Sigmath.Electrical.inductance_in_series(inductances))
+        </code></pre>
+        <h2>Sigmath.Electrical.CalculateTotalInductanceInParallel(inductances)</h2>
+        <p>This function calculates the total inductance of inductors connected in parallel.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Electrical.CalculateTotalInductanceInParallel(inductances))
+            • C++ std::cout << Sigmath::CalculateTotalInductanceInParallel(inductances) << std::endl;
+            • Python print(Sigmath.Electrical.inductance_in_parallel(inductances))
+        </code></pre>
+
+        <h1>Kinematics class</h1>
+        <p>This class containts few kinematics methods.</p>
+
+        <h2>Sigmath.Kinematics.CalculateDisplacement(initialVelocity, finalVelocity, acceleration, time)</h2>
+        <p>This function calculates the displacement of an object with constant acceleration given its initial velocity, final velocity, acceleration, and time.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Kinematics.CalculateDisplacement(initialVelocity, finalVelocity, acceleration, time))
+            • Python print(Sigmath.Kinematics.calculate_displacement(initialVelocity, finalVelocity, acceleration, time))
+        </code></pre>
+        <h2>Sigmath.Kinematics.CalculateFinalVelocity(initialVelocity, acceleration, displacement)</h2>
+        <p>This function calculates the final velocity of an object with constant acceleration given its initial velocity, acceleration, and displacement.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Kinematics.CalculateFinalVelocity(initialVelocity, acceleration, displacement))
+            • Python print(Sigmath.Kinematics.calculate_final_velocity(initialVelocity, acceleration, displacement))
+        </code></pre>
+        <h2>Sigmath.Kinematics.CalculateTime(initialVelocity, finalVelocity, displacement, acceleration)</h2>
+        <p>This function calculates the time taken by an object with constant acceleration to travel a certain displacement, given its initial velocity, final velocity, and acceleration.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Kinematics.CalculateTime(initialVelocity, finalVelocity, displacement, acceleration))
+            • Python print(Sigmath.Kinematics.calculate_time(initialVelocity, finalVelocity, displacement, acceleration))
+        </code></pre>
+        <h2>Sigmath.Kinematics.CalculateProjectileRange(initialVelocity, launchAngle)</h2>
+        <p>This function calculates the horizontal range of a projectile launched at a certain angle with a certain initial velocity, given the acceleration due to gravity.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Kinematics.CalculateProjectileRange(initialVelocity, launchAngle))
+            • Python print(Sigmath.Kinematics.calculate_projectile_range(initialVelocity, launchAngle))
+        </code></pre>
+
+        <h1>Mechanical class</h1>
+        <p>This class containts some mechanical engineering mathematical functions.</p>
+
+
+        <h2>Sigmath.Mechanical.CalculateTorque(force, radius)</h2>
+        <p>This function calculates the torque exerted by a force on a rotating object with a given radius.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Mechanical.CalculateTorque(force, radius))
+            • C++ cout << Sigmath::Mechanical::CalculateTorque(force, radius) << endl;
+            • Python print(Sigmath.Mechanical.calculate_torque(force, radius))
+        </code></pre>
+        <h2>Sigmath.Mechanical.CalculatePower(torque, angularVelocity)</h2>
+        <p>This function calculates the power output of a rotating object given its torque and angular velocity.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Mechanical.CalculatePower(torque, angularVelocity))
+            • C++ cout << Sigmath::Mechanical::CalculatePower(torque, angularVelocity) << endl;
+            • Python print(Sigmath.Mechanical.calculate_power(torque, angular_velocity))
+        </code></pre>
+        <h2>Sigmath.Mechanical.CalculateVelocity(distance, time)</h2>
+        <p>This function calculates the velocity of an object given its displacement and time.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Mechanical.CalculateVelocity(distance, time))
+            • C++ cout << Sigmath::Mechanical::CalculateVelocity(distance, time) << endl;
+            • Python print(Sigmath.Mechanical.calculate_velocity(distance, time))
+        </code></pre>
+        <h2>Sigmath.Mechanical.CalculateAcceleration(initialVelocity, finalVelocity, time)</h2>
+        <p>This function calculates the acceleration of an object given its initial and final velocity and time.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Mechanical.CalculateAcceleration(initialVelocity, finalVelocity, time))
+            • C++ cout << Sigmath::Mechanical::CalculateAcceleration(initialVelocity, finalVelocity, time) << endl;
+            • Python print(Sigmath.Mechanical.calculate_acceleration(initial_velocity, final_velocity, time))
+        </code></pre>
+        <h2>Sigmath.Mechanical.CalculateForce(mass, acceleration)</h2>
+        <p>This function calculates the force exerted on an object given its mass and acceleration.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Mechanical.CalculateForce(mass, acceleration))
+            • C++ cout << Sigmath::Mechanical::CalculateForce(mass, acceleration) << endl;
+            • Python print(Sigmath.Mechanical.calculate_force(mass, acceleration))
+        </code></pre>
+
+        <h1>Statistics class</h1>
+        <p>This class containts basic stats methods.</p>
+
+
+        <h2>Sigmath.Statistics.Mean(values)</h2>
+        <p>This function calculates the arithmetic mean of a sequence of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Statistics.Mean(values))
+            • C++ N/A
+            • Python print(sigmath.statistics.mean(values))
+        </code></pre>
+        <h2>Sigmath.Statistics.Median(values)</h2>
+        <p>This function calculates the median of a sequence of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Statistics.Median(values))
+            • C++ N/A
+            • Python print(sigmath.statistics.median(values))
+        </code></pre>
+        <h2>Sigmath.Statistics.Mode(values)</h2>
+        <p>This function calculates the mode of a sequence of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Statistics.Mode(values))
+            • C++ N/A
+            • Python print(sigmath.statistics.mode(values))
+        </code></pre>
+        <h2>Sigmath.Statistics.Variance(values)</h2>
+        <p>This function calculates the variance of a sequence of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Statistics.Variance(values))
+            • C++ N/A
+            • Python print(sigmath.statistics.variance(values))
+        </code></pre>
+        <h2>Sigmath.Statistics.StandardDeviation(values)</h2>
+        <p>This function calculates the standard deviation of a sequence of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Statistics.StandardDeviation(values))
+            • C++ N/A
+            • Python print(sigmath.statistics.standard_deviation(values))
+        </code></pre>
+        <h2>Sigmath.Statistics.Correlation(valuesX, valuesY)</h2>
+        <p>This function calculates the correlation coefficient between two sequences of values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Statistics.Correlation(valuesX, valuesY))
+            • C++ N/A
+            • Python print(sigmath.statistics.correlation(valuesX, valuesY))
+        </code></pre>
+
+
+        <h1>Statistics Algorithms (Statgorithm) class</h1>
+        <p>This class containts advanced statistics algorithms.</p>
+
+        <h2>Sigmath.Skewness(values)</h2>
+        <p>This function calculates the skewness of a sequence of numerical values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Skewness(values))
+            • Python print(Sigmath.skewness(values))
+        </code></pre>
+        <h2>Sigmath.Kurtosis(values)</h2>
+        <p>This function calculates the kurtosis of a sequence of numerical values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Kurtosis(values))
+            • Python print(Sigmath.kurtosis(values))
+        </code></pre>
+        <h2>Sigmath.Covariance(xValues, yValues)</h2>
+        <p>This function calculates the covariance between two sequences of numerical values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Covariance(xValues, yValues))
+            • Python print(Sigmath.covariance(xValues, yValues))
+        </code></pre>
+        <h2>Sigmath.Percentile(values, percentile)</h2>
+        <p>This function calculates the percentile of a sequence of numerical values.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Percentile(values, percentile))
+            • Python print(Sigmath.percentile(values, percentile))
+        </code></pre>
+        <h2>Sigmath.RemoveOutliers(values)</h2>
+        <p>This function removes outliers from a sequence of numerical values.</p>
+        <pre><code>
+            • C# foreach (var value in Sigmath.RemoveOutliers(values)) { Console.WriteLine(value); }
+            • Python for value in Sigmath.remove_outliers(values): print(value)
+        </code></pre>
+
+        <h1>Trigonometry (Trig) class</h1>
+        <p>This class contains basic trigonometric functions</p>
+
+
+        <h2>Sigmath.Trig.Sin(x)</h2>
+        <p>This function returns the sine of the angle x in radians.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Trig.Sin(x))
+            • C++ Not available
+            • Python print(Sigmath.Trig.sin(x))
+        </code></pre>
+        <h2>Sigmath.Trig.Cos(x)</h2>
+        <p>This function returns the cosine of the angle x in radians.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Trig.Cos(x))
+            • Python print(Sigmath.Trig.cos(x))
+        </code></pre>
+        <h2>Sigmath.Trig.Tan(x)</h2>
+        <p>This function returns the tangent of the angle x in radians.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Trig.Tan(x))
+            • Python print(Sigmath.Trig.tan(x))
+        </code></pre>
+        <h2>Sigmath.Trig.Asin(x)</h2>
+        <p>This function returns the inverse sine of x in radians. The result is between -π/2 and π/2.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Trig.Asin(x))
+            • Python print(Sigmath.Trig.asin(x))
+        </code></pre>
+        <h2>Sigmath.Trig.Acos(x)</h2>
+        <p>This function returns the inverse cosine of x in radians. The result is between 0 and π.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Trig.Acos(x))
+            • Python print(Sigmath.Trig.acos(x))
+        </code></pre>
+        <h2>Sigmath.Trig.Atan(x)</h2>
+        <p>This function returns the inverse tangent of x in radians. The result is between -π/2 and π/2.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Trig.Atan(x))
+            • Python print(Sigmath.Trig.atan(x))
+        </code></pre>
+
+        <h1>Hyperbolic class</h1>
+        <p>This class contains hyperbolic trigonometric functions.</p>
+
+        <h2>Sigmath.Hyperbolic.Sinh(x)</h2>
+        <p>This function returns the hyperbolic sine of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Sinh(x));
+            • C++ cout << sinh(x) << endl;
+            • Python print(sigmath.hyperbolic_sinh(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Cosh(x)</h2>
+        <p>This function returns the hyperbolic cosine of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Cosh(x));
+            • C++ cout << cosh(x) << endl;
+            • Python print(sigmath.hyperbolic_cosh(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Tanh(x)</h2>
+        <p>This function returns the hyperbolic tangent of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Tanh(x));
+            • C++ cout << tanh(x) << endl;
+            • Python print(sigmath.hyperbolic_tanh(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Sech(x)</h2>
+        <p>This function returns the hyperbolic secant of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Sech(x));
+            • Python print(sigmath.hyperbolic_sech(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Csch(x)</h2>
+        <p>This function returns the hyperbolic cosecant of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Csch(x));
+            • Python print(sigmath.hyperbolic_csch(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Coth(x)</h2>
+        <p>This function returns the hyperbolic cotangent of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Coth(x));
+            • Python print(sigmath.hyperbolic_coth(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Asinh(x)</h2>
+        <p>This function returns the inverse hyperbolic sine of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Asinh(x));
+            • Python print(sigmath.hyperbolic_asinh(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Acosh(x)</h2>
+        <p>This function returns the inverse hyperbolic cosine of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Acosh(x));
+            • Python print(sigmath.hyperbolic_acosh(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Atanh(x)</h2>
+        <p>This function returns the inverse hyperbolic tangent of x.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Atanh(x));
+            • Python print(sigmath.hyperbolic_atanh(x))
+        </code></pre>
+
+        <h2>Sigmath.Hyperbolic.Asech(x)</h2>
+        <p>This function returns the inverse hyperbolic secant (arcsech) of a given number.</p>
+        <p><strong>Input:</strong> a number x such that 0 &lt; x &lt; 1.</p>
+        <p><strong>Output:</strong> the value of arcsech(x) in radians.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Asech(x))
+            • Python print(Sigmath.Hyperbolic.asech(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Acsch(x)</h2>
+        <p>This function returns the inverse hyperbolic cosecant (arccsch) of a given number.</p>
+        <p><strong>Input:</strong> a number x such that x &ne; 0.</p>
+        <p><strong>Output:</strong> the value of arccsch(x) in radians.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Acsch(x))
+            • Python print(Sigmath.Hyperbolic.acsch(x))
+        </code></pre>
+        <h2>Sigmath.Hyperbolic.Acoth(x)</h2>
+        <p>This function returns the inverse hyperbolic cotangent (arccoth) of a given number.</p>
+        <p><strong>Input:</strong> a number x such that -1 &lt; x &lt; 1.</p>
+        <p><strong>Output:</strong> the value of arccoth(x) in radians.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Hyperbolic.Acoth(x))
+            • Python print(Sigmath.Hyperbolic.acoth(x))
+        </code></pre>
+
+        <h1>Time class</h1>
+        <p>This class contains methods related to time.</p>
+        
+        <h2>Sigmath.Time.Ticks</h2>
+        <p>This property returns the number of ticks that represent the time of the instance.</p>
+        <pre><code>
+            • C# long ticks = Sigmath.Time.Now().Ticks;
+            • Python ticks = Sigmath.Time().ticks
+        </code></pre>
+        <h2>Sigmath.Time.ToString()</h2>
+        <p>This method returns the string representation of the time in the format "yyyy-MM-dd HH:mm:ss".</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Time.Now().ToString());
+            • Python print(str(Sigmath.Time()))
+        </code></pre>
+        <h2>Sigmath.Time.Now()</h2>
+        <p>This method returns a Time instance representing the current time.</p>
+        <pre><code>
+            • C# Time time = Sigmath.Time.Now();
+            • Python time = Sigmath.Time()
+        </code></pre>
+
+        <h1>Random class</h1>
+        <p>This class contains random selection and choice methods</p>
+
+
+        <h2>Sigmath.Rand.NextLong()</h2>
+        <p>This function returns a random 64-bit integer.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Sigmath.Rand().NextLong());
+            • C++ (not available)
+            • Python print(Sigmath.Rand().next_long())
+        </code></pre>
+        <h2>Sigmath.Rand.NextDouble()</h2>
+        <p>This function returns a random double between 0 and 1.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Sigmath.Rand().NextDouble());
+            • C++ (not available)
+            • Python print(Sigmath.Rand().next_double())
+        </code></pre>
+        <h2>Sigmath.Rand.Next(int minValue, int maxValue)</h2>
+        <p>This function returns a random integer between <code>minValue</code> and <code>maxValue</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Sigmath.Rand().Next(1, 10));
+            • Python print(Sigmath.Rand().next(1, 10))
+        </code></pre>
+        <h2>Sigmath.Rand.Next(int maxValue)</h2>
+        <p>This function returns a random integer between 0 and <code>maxValue</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Sigmath.Rand().Next(10));
+            • Python print(Sigmath.Rand().next(10))
+        </code></pre>
+        <h2>Sigmath.Rand.Next()</h2>
+        <p>This function returns a random integer between <code>int.MinValue</code> and <code>int.MaxValue</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Sigmath.Rand().Next());
+            • Python print(Sigmath.Rand().next())
+        </code></pre>
+        <h2>Sigmath.Random.RandUniform(double min, double max)</h2>
+        <p>This function returns a random double between <code>min</code> and <code>max</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Random.RandUniform(0.0, 1.0));
+            • Python print(Sigmath.Random.rand_uniform(0.0, 1.0))
+        </code></pre>
+        <h2>Sigmath.Random.RandNormal(double mean, double stdDev)</h2>
+        <p>This function returns a random double from a normal distribution with mean <code>mean</code> and standard deviation <code>stdDev</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Random.RandNormal(0.0, 1.0));
+            • Python print(Sigmath.Random.rand_normal(0.0, 1.0))
+        </code></pre>
+        <h2>Sigmath.Random.RandPoisson(double lambda)</h2>
+        <p>This function returns a random integer from a Poisson distribution with parameter <code>lambda</code>.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Random.RandPoisson(1.0));
+            • Python print(Sigmath.Random.rand_poisson(1.0))
+        </code></pre>
+
+        <h1>Polynomial class</h1>
+        <p>This class contains more polynomial methods apart from Equations class.</p>
+
+        <h2>Sigmath.Polynomial</h2>
+        <p>The Polynomial class represents a polynomial function with real coefficients. It has the following methods:</p>
+        <h3>Polynomial.Evaluate(x)</h3>
+        <p>Evaluates the polynomial at a given value of x and returns the result.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Polynomial(1, 2, 3).Evaluate(4))
+            • C++ N/A
+            • Python print(Polynomial(1, 2, 3).evaluate(4))
+        </code></pre>
+        <h3>Polynomial.Divide(dividend, divisor)</h3>
+        <p>Computes the quotient of two polynomials and returns the result.</p>
+        <pre><code>
+            • C# Console.WriteLine(Polynomial.Divide(new Polynomial(1, 2, 3), new Polynomial(1, 2)))
+            • Python print(Polynomial.divide(Polynomial(1, 2, 3), Polynomial(1, 2)))
+        </code></pre>
+        <h3>Polynomial.Divide(divisor)</h3>
+        <p>Computes the quotient of this polynomial and another polynomial and returns the result.</p>
+        <pre><code>
+            • C# Console.WriteLine(new Polynomial(1, 2, 3).Divide(new Polynomial(1, 2)))
+            • Python print(Polynomial(1, 2, 3).divide(Polynomial(1, 2)))
+        </code></pre>
+        <h3>Polynomial.Degree</h3>
+        <p>Returns the degree of the polynomial (i.e., the highest power of x with a non-zero coefficient).</p>
+        <pre><code>
+            • C# Console.WriteLine(new Polynomial(1, 2, 3).Degree)
+            • Python print(Polynomial(1, 2, 3).degree)
+        </code></pre>
+        <h3>Polynomial._coefficients</h3>
+        <p>Readonly property that returns the coefficients of the polynomial as an array of doubles.</p>
+        <pre><code>
+            • C# var p = new Polynomial(1, 2, 3); Console.WriteLine(string.Join(", ", p._coefficients))
+            • Python p = Polynomial(1, 2, 3); print(p._coefficients)
+        </code></pre>
+        <h3>PolynomialExtensions.Derivative(polynomial)</h3>
+        <p>Returns the derivative of the polynomial.</p>
+        <pre><code>
+            • C# Console.WriteLine(PolynomialExtensions.Derivative(new Polynomial(1, 2, 3)))
+            • Python print(PolynomialExtensions.derivative(Polynomial(1, 2, 3)))
+        </code></pre>
+
+        <h1>Logarithm class</h1>
+        <p>This class containts methods related to logarithms.</p>
+        <h2>Sigmath.Log(double x)</h2>
+        <p>This function returns the natural logarithm of a positive number.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Log(x))
+            • C++ (using C# interop) Console::WriteLine(gcnew Sigmath::Logarithm()->Log(x))
+            • Python (using IronPython) import clr; clr.AddReference('Sigmath'); from Sigmath import Logarithm; print(Logarithm.Log(x))
+        </code></pre>
+        <h2>Sigmath.Log10(double x)</h2>
+        <p>This function returns the base 10 logarithm of a positive number.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Log10(x))
+            • C++ (using C# interop) Console::WriteLine(gcnew Sigmath::Logarithm()->Log10(x))
+            • Python (using IronPython) import clr; clr.AddReference('Sigmath'); from Sigmath import Logarithm; print(Logarithm.Log10(x))
+        </code></pre>
+        <h2>Sigmath.Logn(double n, double x)</h2>
+        <p>This function returns the logarithm of a positive number with a specified base.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Logn(n, x))
+            • C++ (using C# interop) Console::WriteLine(gcnew Sigmath::Logarithm()->Logn(n, x))
+            • Python (using IronPython) import clr; clr.AddReference('Sigmath'); from Sigmath import Logarithm; print(Logarithm.Logn(n, x))
+        </code></pre>
+
+        <h1>Geometry class</h1>
+        <p>This class containts geometrical methods.</p>
+
+        <h2>Sigmath.Geometry.CircleArea(radius)</h2>
+        <p>This function calculates the area of a circle given its radius.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.CircleArea(radius));
+            • Python print(Sigmath.Geometry.circle_area(radius))
+        </code></pre>
+        <h2>Sigmath.Geometry.CirclePerimeter(radius)</h2>
+        <p>This function calculates the perimeter of a circle given its radius.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.CirclePerimeter(radius));
+            • Python print(Sigmath.Geometry.circle_perimeter(radius))
+        </code></pre>
+        <h2>Sigmath.Geometry.RectangleArea(width, height)</h2>
+        <p>This function calculates the area of a rectangle given its width and height.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.RectangleArea(width, height));
+            • Python print(Sigmath.Geometry.rectangle_area(width, height))
+        </code></pre>
+        <h2>Sigmath.Geometry.RectanglePerimeter(width, height)</h2>
+        <p>This function calculates the perimeter of a rectangle given its width and height.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.RectanglePerimeter(width, height));
+            • Python print(Sigmath.Geometry.rectangle_perimeter(width, height))
+        </code></pre>
+        <h2>Sigmath.Geometry.TriangleArea(base, height)</h2>
+        <p>This function calculates the area of a triangle given its base and height.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.TriangleArea(@base, height));
+            • Python print(Sigmath.Geometry.triangle_area(base, height))
+        </code></pre>
+        <h2>Sigmath.Geometry.TrianglePerimeter(side1, side2, side3)</h2>
+        <p>This function calculates the perimeter of a triangle given its side lengths.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.TrianglePerimeter(side1, side2, side3));
+            • Python print(Sigmath.Geometry.triangle_perimeter(side1, side2, side3))
+        </code></pre>
+        <h2>Sigmath.Geometry.DistanceBetweenPoints2D(x1, y1, x2, y2)</h2>
+        <p>This function calculates the distance between two points in 2D space.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.DistanceBetweenPoints2D(x1, y1, x2, y2));
+            • Python print(Sigmath.Geometry.distance_between_points_2d(x1, y1, x2, y2))
+        </code></pre>
+        <h2>Sigmath.Geometry.DistanceBetweenPoints3D(x1, y1, z1, x2, y2, z2)</h2>
+        <p>This function calculates the distance between two points in 3D space.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.DistanceBetweenPoints3D(x1, y1, z1, x2, y2, z2));
+            • Python print(Sigmath.Geometry.distance_between_points_3d(x1, y1, z1, x2, y2, z2))
+        </code></pre>
+        <h2>Sigmath.Geometry.AngleBetweenLines(slope1, slope2)</h2>
+        <p>This function calculates the angle between two lines given their slopes.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.AngleBetweenLines(slope1, slope2));
+            • Python print(Sigmath.Geometry.angle_between_lines(slope1, slope2))
+        </code></pre>
+        <h2>Sigmath.Geometry.AngleBetweenVectors2D(x1, y1, x2, y2)</h2>
+        <p>This function returns the angle between two 2D vectors.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.AngleBetweenVectors2D(x1, y1, x2, y2))
+            • C++ std::cout << Sigmath::Geometry::AngleBetweenVectors2D(x1, y1, x2, y2) << std::endl;
+            • Python print(Sigmath.Geometry.angle_between_vectors_2D(x1, y1, x2, y2))
+        </code></pre>
+        <h2>Sigmath.Geometry.AngleBetweenVectors3D(x1, y1, z1, x2, y2, z2)</h2>
+        <p>This function returns the angle between two 3D vectors.</p>
+        <pre><code>
+            • C# Console.WriteLine(Sigmath.Geometry.AngleBetweenVectors3D(x1, y1, z1, x2, y2, z2, v))
+            • C++ std::cout << Sigmath::Geometry::AngleBetweenVectors3D(x1, y1, z1, x2, y2, z2, v) << std::endl;
+            • Python print(Sigmath.Geometry.angle_between_vectors_3D(x1, y1, z1, x2, y2, z2, v))
+        </code></pre>
+
+        <h1>Constants class</h1>
+        <p>This class contains various mathematical constants.</p>
+        <li>Constants.Pi = 3.14159265358979323846</li>
+        <li>Constants.E = 2.71828182845904523536</li>
+        <li>Constants.G = 9.81</li>
+        <li>Constants.Phi = 1.61803398874989484820</li>
+        <li>Constants.Sqrt2 = 1.41421356237309504880</li>
+        <li>Constants.Sqrt3 = 1.73205080756887729353</li>
+        <li>Constants.Sqrt5 = 2.23606797749978969641</li>
+        <li>Constants.Sqrt7 = 2.64575131106459059050</li>
+        <li>Constants.Sqrt10 = 3.16227766016837933199</li>
+        <li>Constants.Ln2 = 0.69314718055994530942</li>
+        <li>Constants.Ln3 = 1.09861228866810969139</li>
+        <li>Constants.Ln10 = 2.30258509299404568402</li>
+        <li>Constants.Catalan = 0.91596559417721901505</li>
+        <li>Constants.EulerMascheroni = 0.57721566490153286060</li>
+        <li>Constants.GlaisherKinkelin = 1.28242712910062263688</li>
+        <li>Constants.Omega = 0.56714329040978387299</li>
+        <li>Constants.BrentKung = 1.26217744835361888812</li>
+        <li>Constants.Khinchin = 2.68545200106530644531</li>
+        <li>Constants.LandauRamunajan = 0.76422365358922066299</li>
+        <li>Constants.LaplaceLimit = 0.66274341934918158097</li>
+        <li>Constants.Lengendre = 0.66260700478064925527</li>
+        <li>Constants.Ljunggren = 1.15493494589850604406</li>
+        <li>Constants.Mason = 1.60669515241529176378</li>
+        <li>Constants.Niven = 0.12345678910111213142</li>
+        <li>Constants.OmegaConstant = 0.56714329040978387299</li>
+        <li>Constants.PlasticConstant = 1.32471795724474602596</li>
+        <li>Constants.SilverRatio = 2.41421356237309504880</li>
+        <li>Constants.Viswanath = 1.13198824879429842508</li>
+        <li>Constants.ReciprocalFibonacci = 2.07808692123502753760</li>
+        <li>Constants.Gelfond = 23.14069263277926900573</li>
+        <li>Constants.ArtinsConstant = 0.37395581361920228805</li>
+        <li>Constants.h = 6.62607015e-34</li>
+        <li>Constants.c = 299792458</li>
+        <li>Constants.k = 1.380649e-23</li>
+        <li>Na = 6.02214076e23</li>
+        <li>R = 8.314462618</li>
+        <li>e = 2.71828182845904523536</li>
+        <li>phi = 1.61803398874989484820</li>
+        <li>gamma = 0.57721566490153286061</li>
+        <li>mu0 = 4 * Pi * 1e-7</li>
+        <li>eps0 = 8.8541878128e-12</li>
+        <li>Z0 = 376.730313461</li>
+        <li>alpha = 7.2973525693e-3</li>
+        <li>me = 9.10938356e-31</li>
+        <li>mp = 1.6726219e-27</li>
+        <li>mn = 1.674927471e-27</li>
+        <li>sigma = 5.670374419e-8</li>
+        <li>Ry = 10973731.568160</li>
+        <li>a = 0.0000000000000000000000000000000000160162261</li>
+        <li>G0 = 7.748091729e-5</li>
+        <li>hbar = h / (2 * Pi)</li>
+        <li>kb = R / Na</li>
+        <li>PlanckMass = 2.176434e-8</li>
+        <li>PlanckLength = 1.616229e-35</li>
+        <li>PlanckTime = 5.39116e-44</li>
+        <li>PlanckCharge = 1.87554595641e-18</li>
+        <li>PlanckTemperature = 1.416808e+32</li>
+        <li>GravitationalAlpha = 0.0072973525698</li>
+        <li>GravitationalBeta = 0.000112462916</li>
+        <li>GravitationalGamma = 1.4755214e-9</li>
+        <li>ChandrasekharLimit = 1.459e+30</li>
+        <li>SolarMass = 1.98847e+30</li>
+        <li>LunarMass = 7.342e+22</li>
+        <li>EarthMass = 5.972e+24</li>
+        <li>SolarRadius = 6.957e+8</li>
+        <li>LunarRadius = 1.737e+6</li>
+        <li>EarthRadius = 6.371e+6</li>
+        <li>AstronomicalUnit = 1.496e+11</li>
+        <li>LightYear = 9.461e+15</li>
+        <li>Parsec = 3.086e+16</li>
+        <li>BoltzmannEntropy = 1.380649e-23</li>
+        <li>WienFrequencyDisplacement = 5.878933e+10</li>
+        <li>WienWavelengthDisplacement = 2.8977729e-3</li>
+        <li>ElectronCharge = 1.602176634e-19</li>
+        <li>ProtonRadius = 8.414e-16</li>
+        <li>BohrRadius = 5.29177210903e-11</li>
+        <li>RydbergEnergy = 2.1798723611e-18</li>
+        <li>FineStructureConstant = 7.2973525693e-3</li>
+        <li>MagneticFluxQuantum = 2.067833831e-15</li>
+        <li>ConductanceQuantum = 7.74809173e-5</li>
+        <li>JosephsonConstant = 4.83597870e+14</li>
+        <li>VonKlitzingConstant = 2.5812807438e+4</li>
+        <li>AtomicMassUnit = 1.66053906660e-27</li>
+        <li>FaradayConstant = 9.64853399e+4</li>
+        <li>ElementaryCharge = 1.602176634e-19</li>
+        <li>Boltzmann = 1.380649e-23</li>
+        <li>Faraday = 96485.33212</li>
+        <li>Planck = 6.62607015e-34</li>
+        <li>VacuumPermittivity = 8.8541878128e-12</li>
+        <li>VacuumPermeability = 1.25663706212e-6</li>
+        <li>SpeedOfLight = 299792458</li>
+        <li>CoulombsConstant = 8.9875517923e9</li>
+        <li>ConductivityOfCopper = 5.96e7</li>
+        <li>ConductivityOfAluminum = 3.77e7</li>
+        <li>ConductivityOfSilver = 6.30e7</li>
+        <li>ConductivityOfGold = 4.10e7</li>
+        <li>ConductivityOfIron = 1.00e7</li>
+        <li>ConductivityOfSteel = 6.99e6</li>
+        <li>ConductivityOfBrass = 1.59e7</li>
+        <li>ConductivityOfBronze = 1.07e7</li>
+        <li>AvogadroNumber = 6.02214076e23</li>
+        <li>PlanckConstant = 62607015e-34</li>
+        <li>GravitationalConstant = 6.67430e-11</li>
+        <li>BoltzmannConstant = 1.380649e-23</li>
+        <li>RydbergConstant = 10973731.568160</li>
+
+        <h1>Special methods</h1>
+        <h2>Sigmath.Equif.Equify</h2>
+        <h2>Sigmath.ExpressionParser.ExpressionParser</h2>
+
+        <p>Sigmath framework can only be used for C, C++, C# and Python. All copyrights reserved. Made by Enginestein.</p>
+
+    </div></body></html>
