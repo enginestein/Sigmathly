@@ -119,4 +119,4 @@ For Assembly we can replace `::` operator with `_` to use functions and classes.
 
 #### To know how to use Sigmathly in x86_64 assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-x86_64.asm)
 #### To know how to use Sigmathly in ARM assembly, click [here](https://github.com/aryapraneil/Sigmathly/blob/main/USAGE-ARM.asm)
-#### To know how to use Sigmathly in C++, click [here](https://enginestein.github.io/Sigmath/)
+#### To know how to use Sigmathly in C++, open the docs.html
