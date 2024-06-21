@@ -14,17 +14,7 @@ You can use Sigmathly in following assemblies:
 - AVR 
 - PIC 
 - 68k
-
-# Why use Sigmathly?
-
-Introducing Sigmathly: Revolutionizing Mathematics in Assembly Programming!
-
-Sigmathly is an innovative assembly framework designed to enable seamless mathematical operations directly within assembly code. With the power of Sigmathly, there is no longer a requirement to rely on external languages like C++ or C to perform mathematical calculations in assembly programming. Now, you can perform complex mathematics directly in assembly!
-
-Assembly language is widely utilized in advanced and intricate systems. However, incorporating mathematical operations into such systems has traditionally involved navigating through perplexing assembly keywords. Sigmathly eliminates this complexity by providing a straightforward and intuitive approach to integrating mathematics into assembly programming.
-
-By leveraging Sigmathly, programmers working with assembly can effortlessly leverage a wide range of mathematical functionalities, empowering them to tackle sophisticated mathematical computations within their projects. This groundbreaking framework opens up new possibilities for mathematics in assembly, making it an indispensable tool for developers working in complex systems.
-
+- 
 # Installation
 
 - Go to releases tab
