@@ -14,7 +14,7 @@ You can use Sigmathly in following assemblies:
 - AVR 
 - PIC 
 - 68k
-- 
+
 # Installation
 
 - Go to releases tab
